@@ -1,0 +1,94 @@
+:root{
+  --BGCOLOR: black;
+  --COLOR: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  min-height: 100vh;
+  font-family: sans-serif, cursive;
+  display: flex;
+  background-color:var(--COLOR);
+}
+
+#root{
+  flex-grow: 1;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: var(--BGCOLOR);
+  padding: 0.4rem;
+}
+
+.header__section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__section h1 {
+  color: var(--COLOR);
+}
+
+.menuBtn{
+  height: 30px;
+  width: 35px;
+  background-color: inherit;
+  /* border: 1px solid var(--COLOR); */
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.menuBar,
+.menuBar::before,
+.menuBar::after{
+  background-color: var(--COLOR);
+  height: 1px;
+  width: 25px;
+}
+
+.menuBar::before,
+.menuBar::after{
+  content: '';
+  position: absolute;
+}
+
+.menuBar::before{
+  transform: translate(-12px, -7px);
+}
+
+.menuBar::after{
+  transform: translate(-12px, 7px);
+}
+
+.searchForm{
+  background-color:gold;
+  height: 40px;
+  display: flex;
+  padding: 0 0.4rem;
+}
+
+.searchForm label{
+  position: absolute;
+  left: 100000px;
+}
+
+.searchForm input{
+  outline: none;
+  max-width: 50%;
+  width: 45%;
+}
