@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Phudu:wght@600&family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Phudu:wght@900&family=Roboto:wght@700&display=swap');
+
 
 :root{
   --BGCOLOR: rgb(2, 43, 43);
@@ -6,6 +7,9 @@
   --SEARCHBTN-COLOR: gray;
   --GOLD: gold;
   --WHITESMOKE: rgb(252, 250, 250);
+  --FUGAZ: 'Fugaz One', cursive;
+  --PHUDU: 'Phudu', cursive;
+  --ROBOTO: 'Roboto', sans-serif;
 }
 
 * {
@@ -20,7 +24,7 @@ html{
 
 body{
   min-height: 100vh;
-  font-family:  'Roboto', sans-serif;
+  font-family: var(--ROBOTO);
   display: flex;
   background-color:var(--COLOR);
 }
@@ -174,14 +178,13 @@ body{
 }
 
 .bycycleLink_1 .hero_1{
-  font-family: 'Fugaz One', cursive;
+  font-family: var(--FUGAZ);
   top: 70px;
   left: 20%;
 }
 .bycycleLink_1 .hero_2{
   top: 120px;
   left: 17%;
-  font-family: cursive;
 }
 
 .menu_link{
@@ -212,11 +215,11 @@ body{
 }
 
 .bycycleLink_2n .hero_1{
-  font-family: 'Phudu', cursive;
+  font-family: var(--PHUDU);
 }
 
 .bycycleLink_2n button,
 .bycycleLink_2n .hero_2{
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--ROBOTO);
 }
 
