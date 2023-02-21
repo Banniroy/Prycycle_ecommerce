@@ -21,9 +21,13 @@ const BicycleLink = () => {
                 <div className='bycycleLink_2n'>
                     <h3 className='hero_1'>PRYCYLE BIKES</h3>
                     <p className='hero_2'>E-Bikes, Mountain, Gravel, Road & More!</p>
-                    <button>SHOP NOW</button>
+                    <button>SHOP NOW &#8594;</button>
                 </div>
                 <img className='image_1' src={image_1} height='300' />
+            </div>
+
+            <div className='menu_link'>
+
             </div>
 
         </div>
