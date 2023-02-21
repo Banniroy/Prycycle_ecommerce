@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Phudu:wght@600&family=Roboto:ital,wght@1,900&display=swap');
+
 :root{
   --BGCOLOR: rgb(2, 43, 43);
   --COLOR: white;
@@ -18,7 +20,7 @@ html{
 
 body{
   min-height: 100vh;
-  font-family: sans-serif, cursive;
+  font-family:  'Roboto', sans-serif;
   display: flex;
   background-color:var(--COLOR);
 }
@@ -172,6 +174,7 @@ body{
 }
 
 .bycycleLink_1 .hero_1{
+  font-family: 'Fugaz One', cursive;
   top: 70px;
   left: 20%;
 }
@@ -181,15 +184,11 @@ body{
   font-family: cursive;
 }
 
-
 .menu_link{
   height: 300px;
   max-width: 100%;
   border: 2px solid red;
 }
-
-
-
 
 .bycycleLink_2{
   position: relative;
@@ -212,4 +211,12 @@ body{
   align-items: flex-start;
 }
 
+.bycycleLink_2n .hero_1{
+  font-family: 'Phudu', cursive;
+}
+
+.bycycleLink_2n button,
+.bycycleLink_2n .hero_2{
+  font-family: 'Roboto', sans-serif;
+}
 
