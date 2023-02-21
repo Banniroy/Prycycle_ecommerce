@@ -3,7 +3,8 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import { useState, useEffect } from 'react';
 import api from './api/posts';
-import Home from './components/Home';
+// import Home from './components/Home';
+import BicycleLink from './components/BicycleLink';
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -32,9 +33,8 @@ const App = () => {
         posts={posts}
         setSearch={setSearchResults}
       />
-      <Home 
-        posts={posts}
-      />
+      <BicycleLink />
+      
     </div>
   )
 }
