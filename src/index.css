@@ -3,6 +3,7 @@
 
 :root{
   --BGCOLOR: rgb(2, 43, 43);
+  --BLACK: black;
   --COLOR: white;
   --SEARCHBTN-COLOR: gray;
   --GOLD: gold;
@@ -189,7 +190,7 @@ body{
 }
 
 .bycycleLink_1 .hero_2{
-  color: rgb(198, 204, 209);
+  color: var(--BLACK);
   font-family: cursive, sans-serif;
   top: 120px;
   left: 17%;
