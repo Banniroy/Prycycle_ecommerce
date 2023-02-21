@@ -1,17 +1,31 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-const Nav = ({ search, setSearch }) => {
+const Nav = ({ posts, setSearchResults }) => {
+    const handleSubmit = (e) => e.preventDefault();
+
+    const handleSearchChange = (e) => {
+        if (!e.target.value) return setSearchResults(posts)
+
+        const resultsArray = posts.filter(post => post.title.includes(e.target.value) || post.body.includes(e.target.value))
+
+        setSearchResults(resultsArray)
+    }
+    
     return (
-        <nav>
-            <form className='searchForm' onSubmit={(e) => e.preventDefault()}>
-                <label htmlFor="search">Search Posts</label>
+        <nav className='search-Form'>
+            <form className="search" onSubmit={handleSubmit}>
                 <input
-                    id='search'
+                    className="search__input"
                     type="text"
-                    value={search}
-                    placeholder='Search'
-                    onChange={(e) => setSearch(e.target.value)}
+                    id="search"
+                    onChange={handleSearchChange}
                 />
+                <button className="search__button">
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                </button>
+
             </form>
         </nav>
     )

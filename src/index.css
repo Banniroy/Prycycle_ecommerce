@@ -1,6 +1,7 @@
 :root{
   --BGCOLOR: black;
   --COLOR: white;
+  --SEARCHBTN-COLOR: gray;
 }
 
 * {
@@ -44,13 +45,13 @@ body{
   height: 30px;
   width: 35px;
   background-color: inherit;
-  /* border: 1px solid var(--COLOR); */
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   outline: none;
+  border: none;
 }
 
 .menuBar,
@@ -75,20 +76,68 @@ body{
   transform: translate(-12px, 7px);
 }
 
-.searchForm{
-  background-color:gold;
-  height: 40px;
+.search-Form{
+  background-color: var(--BGCOLOR);
+  padding: 0 1em 1em 1em;
   display: flex;
-  padding: 0 0.4rem;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.searchForm label{
-  position: absolute;
-  left: 100000px;
+.search {
+  width: 97%;
+  border: 2px solid var(--BGCOLOR);
+  border-radius: 2em;
+  overflow: hidden;
+  font-size: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 
-.searchForm input{
+.search:focus-within {
+  box-shadow: 2px 2px 5px var(--BGCOLOR);
+}
+
+.search__button,
+.search__input {
+  background-color: var(--COLOR);
+  border: none;
   outline: none;
-  max-width: 50%;
-  width: 45%;
+}
+
+.search__input {
+  padding: 1em;
+  width: 85%;
+}
+
+.search__button {
+  width: 15%;
+  font-size: 1.5rem;
+  padding-right: 0.5em;
+  color: var(--SEARCHBTN-COLOR);
+  display: grid;
+  place-content: center;
+}
+
+@media (min-width: 576px) {
+  .search {
+    font-size: 1.5rem;
+  }
+
+  .search__button {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .search {
+    width: 75%;
+    font-size: 2rem;
+  }
+
+  .search__button {
+    padding-right: 0.5em;
+    font-size: 3rem;
+  }
 }
