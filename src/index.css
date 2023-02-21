@@ -1,5 +1,5 @@
 :root{
-  --BGCOLOR: black;
+  --BGCOLOR: rgb(2, 43, 43);
   --COLOR: white;
   --SEARCHBTN-COLOR: gray;
   --GOLD: gold;
@@ -32,6 +32,9 @@ body{
   height: 50px;
   background-color: var(--BGCOLOR);
   padding: 0.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header__section{
@@ -81,7 +84,8 @@ body{
 }
 
 .search-Form{
-  background-color: var(--GOLD);
+  background-color: var(--BGCOLOR);
+  border-top: 1px solid rgb(7, 56, 56);
   padding: 0.4rem 1em 0.4rem  1em;
   display: flex;
   justify-content: flex-start;
@@ -112,6 +116,7 @@ body{
 
 .search__input {
   padding: 1em;
+  height: 40px;
   width: 85%;
 }
 
@@ -176,38 +181,35 @@ body{
   font-family: cursive;
 }
 
-.bycycleLink_2{
-  position: relative;
+
+.menu_link{
+  height: 300px;
+  max-width: 100%;
+  border: 2px solid red;
 }
 
-.bycycleLink_2 .hero{
-  position: absolute;
+
+
+
+.bycycleLink_2{
+  position: relative;
 }
 
 .bycycleLink_2 img{
   width: 100%;
 }
 
-.bycycleLink_2 .hero_1{
-  color: var(--WHITESMOKE);
+.bycycleLink_2 .bycycleLink_2n{
+  position: absolute;
+  width: 200px;
+  height: 100px;
   top: 70px;
-  left: 60%;
-  font-family: sans-serif;
-}
-.bycycleLink_2 .hero_2{
-  color: var(--WHITESMOKE);
-  top: 90px;
-  left: 49%;
-  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+  left: 10%;
 
-.bycycleLink_2 button{
-  top: 113px;
-  left: 72%;
-  color: var(--BGCOLOR);
-  min-width: 90px;
-  height: 30px;
-
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 
