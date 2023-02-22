@@ -2,7 +2,7 @@
 
 
 :root{
-  --BGCOLOR: rgb(2, 43, 43);
+  --BGCOLOR: rgb(2, 43, 43);;
   --BLACK: black;
   --COLOR: white;
   --SEARCHBTN-COLOR: gray;
@@ -12,6 +12,7 @@
   --PHUDU: 'Phudu', cursive;
   --ROBOTO: 'Roboto', sans-serif;
   --HEADER-BG: rgb(7, 56, 56);
+  --BGHOMEPAGE: rgb(249, 253, 255);
 }
 
 * {
@@ -28,12 +29,15 @@ body{
   min-height: 100vh;
   font-family: var(--ROBOTO);
   display: flex;
-  background-color:var(--COLOR);
+  background-color:var(--BGHOMEPAGE);
 }
 
-#root{
+#root {
   flex-grow: 1;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
 .header{
   width: 100%;
@@ -107,7 +111,7 @@ body{
 
 .search-Form{
   background-color: var(--BGCOLOR);
-  border-top: 1px solid rgb(7, 56, 56);
+  border-top: 2px solid rgb(7, 56, 56);
   padding: 0.4rem 1em 0.4rem  1em;
   display: flex;
   justify-content: flex-start;
@@ -175,7 +179,7 @@ body{
 
 .bycycleLink_1{
   width: 100%;
-  height: 300px;
+  height: 310px;
   background-image: url(../src/img/bicycle_0.jpg);
   background-size: 100% 100%;
   
@@ -185,6 +189,7 @@ body{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
 }
 
 .bycycleLink_1 .container{
@@ -220,21 +225,65 @@ body{
   align-items: center;
   flex-flow: row wrap;
   margin: 0.7rem auto;
-  /* border: 1px solid red; */
-  gap: 1rem;
+  gap: 1.7rem;
 }
 
 .menu_link div{
-  /* border: 1px solid red; */
   width: 180px;
-  height: 45%;
-  border-radius: 50%;
-  background-color: var(--SEARCHBTN-COLOR);
+  height: 150px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px;
 }
+
+/*  */
+
+.menu_link .bicycle-Ad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_link .bicycle-Ad img{
+  padding-bottom: 0.9rem;
+}
+
+.bicycle-Ad p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.menu_link .skateBoard-Ad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skateBoard-Ad p{
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.menu_link .sales{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sales p{
+  color: red;
+  font-size: 2rem;
+  font-family: var(--ROBOTO);   
+}
+
+/*  */
 
 .bycycleLink_2{
   width: 100%;
-  height: 300px;
+  height: 310px;
   background-image: url(../src/img/bicycle_1.jpg);
   background-size: 100% 100%;
 }
@@ -253,6 +302,7 @@ body{
 
 .bycycleLink_2 .hero_1{
   font-family: var(--PHUDU);
+  padding-bottom: 0.2rem;
 }
 
 .bycycleLink_2 button,
@@ -260,15 +310,45 @@ body{
   font-family: var(--ROBOTO);
 }
 
+.bycycleLink_2 .hero_2{
+  padding-bottom: 0.4rem;
+}
+
 .bycycleLink_2 button{
   background-color: var(--BGCOLOR);
   color: var(--COLOR);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 110px;
-  height: 40px;
+  height: 37px;
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.bycycleLink .skateboard{
+  margin-top: 1rem;
+  background-image: url(../src/img/skateboard.jpg);
+  width: 100%;
+  height: 310px;
+  background-size: 100% 100%;
+}
+
+.skateboard .container{
+  background-color: rgba(0, 0, 0, 0.397);
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--WHITESMOKE);
+}
+
+.skateboard .container p{
+  background-color: darkred;
+  padding: 0 1rem;
+  font-size: 3rem;
+  text-shadow: 3px 4px 5px var(--BLACK);
+  transform: rotate(-10deg);
 }
 
 footer p{
