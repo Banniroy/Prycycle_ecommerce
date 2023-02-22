@@ -44,6 +44,11 @@ const BicycleLink = () => {
                 </div>
             </div>
 
+            <div className="prycycle">
+                <p>PRYCYCLE IS YOUR ONLINE SOURCE FOR BIKES, COMPONENTS, APPAREL &ACCESSORIES.</p>
+                <h3>WE KEEP YOU PEDALING!!</h3>
+            </div>
+
             <div className="skateboard">
                 <div className='container'>
                     <p>COMMING SOON</p>
