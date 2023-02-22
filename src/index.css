@@ -157,7 +157,7 @@ body{
   place-content: center;
 }
 
-/* @media (min-width: 576px) {
+@media (min-width: 576px) {
   .search {
     font-size: 1.5rem;
   }
@@ -177,7 +177,11 @@ body{
     padding-right: 0.5em;
     font-size: 3rem;
   }
-} */
+
+  .skateboard .container p{
+    font-size: 2.5rem;
+  }
+}
 
 
 .bycycleLink{
@@ -350,7 +354,7 @@ body{
 .skateboard .container p{
   background-color: darkred;
   padding: 0 1rem;
-  font-size: max(1.75rem, 6vh);
+  font-size: 2rem;
   text-shadow: 3px 4px 5px var(--BLACK);
   transform: rotate(-10deg);
 }
