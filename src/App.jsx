@@ -11,6 +11,8 @@ const App = () => {
   const [posts, setPosts] = useState([]);
   const [searchResult, setSearchResults] = useState([]);
 
+  const [openMenu, setOpenMenu] = useState(false);
+
   useEffect(() => {
     const fetcPosts = async () => {
       try {
@@ -29,7 +31,10 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Header />
+      <Header 
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
       <Nav
         posts={posts}
         setSearch={setSearchResults}

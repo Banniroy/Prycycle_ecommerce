@@ -1,8 +1,6 @@
 import React from 'react'
-import { useState } from 'react';
 
-const Header = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+const Header = ({ openMenu, setOpenMenu }) => {
 
   const handleMenuClick = () => {
     setOpenMenu(!openMenu);

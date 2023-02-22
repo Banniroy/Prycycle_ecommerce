@@ -17,15 +17,15 @@ const BicycleLink = () => {
 
             <div className='menu_link'>
                 <div className='bicycle-Ad'>
-                    <img src={Ad_1} alt="" width='113' height='90'/>
+                    <img src={Ad_1} alt="" width='113' height='90' loading='lazy'/>
                     <p>COMPLETE BIKES</p>
                 </div>
                 <div className='bicycle-Ad'>
-                    <img src={Ad_2} alt="" width='150' height='90'/>
+                    <img src={Ad_2} alt="" width='150' height='90' loading='lazy'/>
                     <p>SKATEBOARDS</p>
                 </div>
                 <div className='bicycle-Ad'>
-                    <img src={Ad_3} alt="" width='113' height='100'/>
+                    <img src={Ad_3} alt="" width='113' height='100' loading='lazy'/>
                     <p>COMPONENTS & ACCESSORIES</p>
                 </div>
                 <div className='sales'>

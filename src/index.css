@@ -155,7 +155,7 @@ body{
   place-content: center;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .search {
     font-size: 1.5rem;
   }
@@ -175,7 +175,16 @@ body{
     padding-right: 0.5em;
     font-size: 3rem;
   }
+} */
+
+
+.bycycleLink{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
 }
+
 
 .bycycleLink_1{
   width: 100%;
@@ -183,13 +192,6 @@ body{
   background-image: url(../src/img/bicycle_0.jpg);
   background-size: 100% 100%;
   
-}
-
-.bycycleLink{
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  width: 100%;
 }
 
 .bycycleLink_1 .container{
@@ -204,12 +206,12 @@ body{
 .bycycleLink_1 h2{
   color: var(--WHITESMOKE);
   text-shadow: 2px 2px 5px var(--BLACK);
-  font-size: 1.7rem;
+  font-size: max(1.70rem, 2vh);
 }
 
 .bycycleLink_1 .hero_1{
   font-family: var(--FUGAZ);
-  font-size: 2rem;
+  font-size: max(1.75rem, 4vh);
 }
 
 .bycycleLink_1 .hero_2{
@@ -217,7 +219,7 @@ body{
 }
 
 .menu_link{
-  height: 380px;
+  min-height: 300px;
   max-width: 100%;
   width: 90%;
   display: flex;
@@ -275,7 +277,7 @@ body{
 
 .sales p{
   color: red;
-  font-size: 2rem;
+  font-size: max(1.75rem, 4vh);;
   font-family: var(--ROBOTO);   
 }
 
@@ -346,7 +348,7 @@ body{
 .skateboard .container p{
   background-color: darkred;
   padding: 0 1rem;
-  font-size: 3rem;
+  font-size: max(1.75rem, 6vh);
   text-shadow: 3px 4px 5px var(--BLACK);
   transform: rotate(-10deg);
 }
