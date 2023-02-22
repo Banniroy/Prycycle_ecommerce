@@ -2,8 +2,7 @@
 
 
 :root{
-  --BGCOLOR: rgb(2, 43, 43);;
-  --BLACK: black;
+  --BGCOLOR: black;
   --COLOR: white;
   --SEARCHBTN-COLOR: gray;
   --RED: red;
@@ -12,7 +11,6 @@
   --FUGAZ: 'Fugaz One', cursive;
   --PHUDU: 'Phudu', cursive;
   --ROBOTO: 'Roboto', sans-serif;
-  --HEADER-BG: rgb(7, 56, 56);
   --BGHOMEPAGE: rgb(249, 253, 255);
 }
 
@@ -42,7 +40,7 @@ body{
 
 .search-Form{
   background-color: var(--BGCOLOR);
-  border-top: 2px solid rgb(7, 56, 56);
+  border-top: 1px solid var(--SEARCHBTN-COLOR);
   padding: 0.4rem 1em 0.4rem  1em;
   display: flex;
   justify-content: flex-start;
@@ -152,7 +150,7 @@ body{
 
 .bycycleLink_1 h2{
   color: var(--WHITESMOKE);
-  text-shadow: 2px 2px 5px var(--BLACK);
+  text-shadow: 2px 2px 5px var(--BGCOLOR);
   font-size: max(1.70rem, 2vh);
 }
 
@@ -185,10 +183,12 @@ body{
 }
 
 .bycycleLink .prycycle{
+  background-color: var(--BGCOLOR);
   color: var(--SEARCHBTN-COLOR);
-  font-family: sans-serif, cursive;
+  font-family: var(--ROBOTO);
   text-align: center;
-  margin: 2rem auto;
+  margin: 0.7rem auto;
+  padding: 0.7rem 0;
 }
 
 .bycycleLink .prycycle p{
@@ -259,7 +259,7 @@ body{
   align-items: flex-start;
   padding-left: 2rem;
   color: var(--WHITESMOKE);
-  text-shadow: 2px 2px 5px var(--BLACK);
+  text-shadow: 2px 2px 5px var(--BGCOLOR);
 }
 
 .bycycleLink_2 .hero_1{
@@ -288,7 +288,6 @@ body{
 }
 
 .bycycleLink .skateboard{
-  margin-top: 1rem;
   background-image: url(../src/img/skateboard.jpg);
   width: 100%;
   height: 310px;
@@ -309,14 +308,14 @@ body{
   background-color: darkred;
   padding: 0 1rem;
   font-size: 3rem;
-  text-shadow: 3px 4px 5px var(--BLACK);
+  text-shadow: 3px 4px 5px var(--BGCOLOR);
   transform: rotate(-10deg);
 }
 
 footer p{
   position: sticky;
   bottom: 0;
-  background-color: var(--BLACK);
+  background-color: var(--BGCOLOR);
   color: var(--COLOR);
   text-align: center;
   padding: 0.7rem;
