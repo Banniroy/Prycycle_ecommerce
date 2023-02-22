@@ -167,6 +167,7 @@ body{
 .bycycleLink{
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .image_1{
   width: inherit;
@@ -199,7 +200,16 @@ body{
 .menu_link{
   height: 300px;
   max-width: 100%;
-  border: 2px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_link div{
+  border: 1px solid var(--BLACK);
+  height: 200px;
+  width: 200px;
 }
 
 .bycycleLink_2{
@@ -244,3 +254,11 @@ body{
   cursor: pointer;
 }
 
+footer p{
+  position: sticky;
+  bottom: 0;
+  background-color: #333;
+  color: var(--COLOR);
+  text-align: center;
+  padding: 0.7rem;
+}

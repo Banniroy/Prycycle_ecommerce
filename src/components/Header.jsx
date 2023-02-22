@@ -4,6 +4,7 @@ const Header = () => {
   return (
     <header className='header'>
       <section className='header__section'>
+      <section className="head"></section>
         <h1>Prycycle</h1>
         <button className='menuBtn'>
           <div className='menuBar'></div>

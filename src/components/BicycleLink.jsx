@@ -14,6 +14,10 @@ const BicycleLink = () => {
             </div>
 
             <div className='menu_link'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
 
             </div>
 
@@ -24,10 +28,6 @@ const BicycleLink = () => {
                     <button>SHOP NOW &#8594;</button>
                 </div>
                 <img className='image_1' src={image_1} height='300' />
-            </div>
-
-            <div className='menu_link'>
-
             </div>
 
         </div>
