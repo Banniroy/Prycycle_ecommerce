@@ -17,15 +17,15 @@ const BicycleLink = () => {
 
             <div className='menu_link'>
                 <div className='bicycle-Ad'>
-                    <img src={Ad_1} alt="" width='113' height='90'/>
+                    <img src={Ad_1} alt="" width='113' height='90' />
                     <p>COMPLETE BIKES</p>
                 </div>
                 <div className='bicycle-Ad'>
-                    <img src={Ad_2} alt="" width='150' height='90'/>
+                    <img src={Ad_2} alt="" width='150' height='90' />
                     <p>SKATEBOARDS</p>
                 </div>
                 <div className='bicycle-Ad'>
-                    <img src={Ad_3} alt="" width='113' height='100'/>
+                    <img src={Ad_3} alt="" width='113' height='100' />
                     <p>COMPONENTS & ACCESSORIES</p>
                 </div>
                 <div className='sales'>
@@ -45,8 +45,10 @@ const BicycleLink = () => {
             </div>
 
             <div className="prycycle">
-                <p>PRYCYCLE IS YOUR ONLINE SOURCE FOR BIKES, COMPONENTS, APPAREL &ACCESSORIES.</p>
-                <h3>WE KEEP YOU PEDALING!!</h3>
+                <div className='container'>
+                    <p>PRYCYCLE IS YOUR ONLINE SOURCE FOR BIKES, COMPONENTS, APPAREL &ACCESSORIES.</p>
+                    <h3>WE KEEP YOU PEDALING!!</h3>
+                </div>
             </div>
 
             <div className="skateboard">

@@ -191,6 +191,10 @@ body{
   padding: 0.7rem 0;
 }
 
+.prycycle .container{
+  width: 90%;
+}
+
 .bycycleLink .prycycle p{
   margin-bottom: 1rem;
   padding: 1rem;
