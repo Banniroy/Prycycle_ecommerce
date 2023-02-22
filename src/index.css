@@ -40,7 +40,7 @@ body{
 
 .search-Form{
   background-color: var(--BGCOLOR);
-  border-top: 1px solid var(--SEARCHBTN-COLOR);
+  border-top: 1px solid #333;
   padding: 0.4rem 1em 0.4rem  1em;
   display: flex;
   justify-content: flex-start;
