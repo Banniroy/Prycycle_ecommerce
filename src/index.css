@@ -57,9 +57,10 @@ body{
 }
 
 .menuBtn{
+  display: block;
   height: 30px;
   width: 35px;
-  background-color: inherit;
+  background-color: transparent;
   display: flex;
   position: relative;
   justify-content: center;
@@ -69,26 +70,39 @@ body{
   border: none;
 }
 
-.menuBar,
-.menuBar::before,
-.menuBar::after{
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after{
   background-color: var(--COLOR);
   height: 1px;
   width: 25px;
 }
 
-.menuBar::before,
-.menuBar::after{
+.menu-icon::before,
+.menu-icon::after{
   content: '';
   position: absolute;
 }
 
-.menuBar::before{
+.menu-icon::before{
   transform: translate(-13px, -7px);
 }
 
-.menuBar::after{
+.menu-icon::after{
   transform: translate(-13px, 7px);
+}
+
+.menu-dropdown{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--COLOR);
+  padding: 0.4rem;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 100%;
+  width: 50%;
+  z-index: 1;
 }
 
 .search-Form{
@@ -161,7 +175,10 @@ body{
 
 .bycycleLink_1{
   width: 100%;
-  position: relative;
+  height: 300px;
+  background-image: url(../src/img/bicycle_0.jpg);
+  background-size: 100% 100%;
+  
 }
 
 .bycycleLink{
@@ -169,12 +186,17 @@ body{
   flex-direction: column;
   flex-grow: 1;
 }
-.image_1{
-  width: inherit;
+
+.bycycleLink_1 .container{
+  background-color: rgba(0, 0, 0, 0.397);
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bycycleLink_1 h2{
-  position: absolute;
   color: var(--WHITESMOKE);
   text-shadow: 2px 2px 5px var(--BLACK);
   font-size: 1.7rem;
@@ -183,68 +205,62 @@ body{
 .bycycleLink_1 .hero_1{
   font-family: var(--FUGAZ);
   font-size: 2rem;
-  color: rgb(198, 204, 209);
-  top: 70px;
-  left: -6%;
-  padding-left: 7rem;
-  padding-right: 1rem;
 }
 
 .bycycleLink_1 .hero_2{
-  color: var(--BLACK);
   font-family: cursive, sans-serif;
-  top: 120px;
-  left: 17%;
 }
 
 .menu_link{
-  height: 300px;
+  height: 380px;
   max-width: 100%;
+  width: 90%;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 0.7rem;
+  flex-flow: row wrap;
+  margin: 0.7rem auto;
+  /* border: 1px solid red; */
+  gap: 1rem;
 }
 
 .menu_link div{
-  border: 1px solid var(--BLACK);
-  height: 200px;
-  width: 200px;
+  /* border: 1px solid red; */
+  width: 180px;
+  height: 45%;
+  border-radius: 50%;
+  background-color: var(--SEARCHBTN-COLOR);
 }
 
 .bycycleLink_2{
-  position: relative;
-}
-
-.bycycleLink_2 img{
   width: 100%;
+  height: 300px;
+  background-image: url(../src/img/bicycle_1.jpg);
+  background-size: 100% 100%;
 }
 
-
-.bycycleLink_2 .bycycleLink_2n{
-  position: absolute;
-  width: 200px;
-  height: 100px;
-  top: 90px;
-  left: 8%;
-
+.bycycleLink_2 .container{
+  background-color: rgba(0, 0, 0, 0.397);
+  height: inherit;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-left: 2rem;
+  color: var(--WHITESMOKE);
+  text-shadow: 2px 2px 5px var(--BLACK);
 }
 
-.bycycleLink_2n .hero_1{
+.bycycleLink_2 .hero_1{
   font-family: var(--PHUDU);
 }
 
-.bycycleLink_2n button,
-.bycycleLink_2n .hero_2{
+.bycycleLink_2 button,
+.bycycleLink_2 .hero_2{
   font-family: var(--ROBOTO);
 }
 
-.bycycleLink_2n button{
+.bycycleLink_2 button{
   background-color: var(--BGCOLOR);
   color: var(--COLOR);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -258,7 +274,7 @@ body{
 footer p{
   position: sticky;
   bottom: 0;
-  background-color: #333;
+  background-color: var(--BLACK);
   color: var(--COLOR);
   text-align: center;
   padding: 0.7rem;
