@@ -71,7 +71,8 @@ body{
   align-items: center;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: 1px solid var(--SEARCHBTN-COLOR);
+  border-radius: 2px;
 }
 
 .menu-icon,
@@ -101,11 +102,12 @@ body{
   flex-direction: column;
   background-color: var(--COLOR);
   padding: 0.4rem;
-  border-radius: 5px;
 
   position: absolute;
   top: 100%;
   width: 50%;
+  left: 0;
+  height: 50vh;
   z-index: 1;
 }
 
