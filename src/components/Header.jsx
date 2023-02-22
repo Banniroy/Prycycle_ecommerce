@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../Css/Header.css';
 
 const Header = ({ openMenu, setOpenMenu }) => {
 
@@ -13,9 +14,8 @@ const Header = ({ openMenu, setOpenMenu }) => {
         <h1>Prycycle</h1>
         <button 
           className='menuBtn'
-          onClick={handleMenuClick}
-        >
-          <div className='menu-icon'></div>
+          onClick={handleMenuClick}>
+            <div className='menu-icon'></div>
         </button>
         {openMenu && (
           <div className='menu-dropdown'>

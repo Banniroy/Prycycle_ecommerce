@@ -6,6 +6,7 @@
   --BLACK: black;
   --COLOR: white;
   --SEARCHBTN-COLOR: gray;
+  --RED: red;
   --GOLD: gold;
   --WHITESMOKE: rgb(252, 250, 250);
   --FUGAZ: 'Fugaz One', cursive;
@@ -38,78 +39,6 @@ body{
   justify-content: center;
   align-items: center;
 } 
-
-.header{
-  width: 100%;
-  height: 50px;
-  background-color: var(--BGCOLOR);
-  padding: 0.4rem;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.header__section{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  padding: 0 0.8rem;
-}
-
-.header__section h1 {
-  color: var(--COLOR);
-}
-
-.menuBtn{
-  display: block;
-  height: 30px;
-  width: 35px;
-  background-color: transparent;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid var(--SEARCHBTN-COLOR);
-  border-radius: 2px;
-}
-
-.menu-icon,
-.menu-icon::before,
-.menu-icon::after{
-  background-color: var(--COLOR);
-  height: 1px;
-  width: 25px;
-}
-
-.menu-icon::before,
-.menu-icon::after{
-  content: '';
-  position: absolute;
-}
-
-.menu-icon::before{
-  transform: translate(-13px, -7px);
-}
-
-.menu-icon::after{
-  transform: translate(-13px, 7px);
-}
-
-.menu-dropdown{
-  display: flex;
-  flex-direction: column;
-  background-color: var(--COLOR);
-  padding: 0.4rem;
-
-  position: absolute;
-  top: 100%;
-  width: 50%;
-  left: 0;
-  height: 50vh;
-  z-index: 1;
-}
 
 .search-Form{
   background-color: var(--BGCOLOR);
@@ -183,6 +112,18 @@ body{
   }
 }
 
+.slider .slider-images{
+  display: flex;
+  overflow: auto;
+}
+
+.slider{
+  position: relative;
+}
+
+.slider .slider-images{
+  position: absolute;
+}
 
 .bycycleLink{
   display: flex;

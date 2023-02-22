@@ -1,0 +1,69 @@
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--BGCOLOR);
+    padding: 0.4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+  
+.header__section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+}
+  
+.header__section h1 {
+    color: var(--COLOR);
+}
+  
+.menuBtn{
+    display: block;
+    height: 30px;
+    width: 35px;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(119, 116, 116);
+}
+  
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after{
+    background-color: var(--COLOR);
+    height: 1px;
+    width: 25px;
+}
+  
+.menu-icon::before,
+.menu-icon::after{
+    content: '';
+    position: absolute;
+}
+  
+.menu-icon::before{
+    transform: translate(-13px, -7px);
+}
+  
+.menu-icon::after{
+    transform: translate(-13px, 7px);
+}
+.menu-dropdown{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--COLOR);
+    padding: 0.4rem;
+  
+    position: absolute;
+    top: 100%;
+    width: 70%;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+}
