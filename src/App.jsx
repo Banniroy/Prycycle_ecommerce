@@ -15,10 +15,6 @@ const App = () => {
     setSearchQuery(event.target.value);
   };
 
-  useEffect(() => {
-
-  }, [])
-
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
