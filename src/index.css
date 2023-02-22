@@ -174,7 +174,7 @@ body{
 .bycycleLink_1 h2{
   position: absolute;
   color: var(--WHITESMOKE);
-  text-shadow: 1px 2px 1px var(--BGCOLOR);
+  text-shadow: 2px 2px 5px var(--BLACK);
   font-size: 1.7rem;
 }
 
@@ -209,6 +209,7 @@ body{
 .bycycleLink_2 img{
   width: 100%;
 }
+
 
 .bycycleLink_2 .bycycleLink_2n{
   position: absolute;
