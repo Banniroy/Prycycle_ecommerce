@@ -72,9 +72,6 @@ const BicycleLink = () => {
             </div>
 
             <div>
-                <Switch>
-                    <Route exact path="/BproductLists" component={BicycleProductList} />
-                </Switch>
             </div>
 
         </div>
