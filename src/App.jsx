@@ -2,8 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import { useState, useEffect } from 'react';
-// import api from './api/posts';
-// import Home from './components/Home';
+import { Link } from 'react-router-dom';
 import BicycleLink from './components/BicycleLink';
 import Footer from './components/Footer';
 

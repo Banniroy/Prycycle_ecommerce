@@ -308,6 +308,11 @@ body{
   color: var(--WHITESMOKE);
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .skateboard .container p{
   background-color: darkred;
   padding: 0 1rem;
