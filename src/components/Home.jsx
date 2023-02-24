@@ -4,7 +4,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 const Home = () => {
     return (
 
-        <div className='bycycleLink'>
+        <div className='Home'>
             <div className='bycycleLink_1'>
                 <div className="container">
                     <h2 className='hero_1'>ALL ROUND TRAIL FUN</h2>
