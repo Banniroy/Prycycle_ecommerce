@@ -142,3 +142,24 @@ body{
 .slider .slider-images{
   position: absolute;
 }
+
+.bycycleLink_1{
+    width: 100%;
+    height: 310px;
+    background-image: url(../src/img/bicycle_0.jpg);
+    background-size: 100% 100%;
+}
+
+.bycycleLink_2{
+    width: 100%;
+    height: 310px;
+    background-image: url(../src/img/bicycle_1.jpg);
+    background-size: 100% 100%;
+}
+
+.Home .skateboard{
+    background-image: url(../src/img/skateboard.jpg);
+    width: 100%;
+    height: 310px;
+    background-size: 100% 100%;
+}
