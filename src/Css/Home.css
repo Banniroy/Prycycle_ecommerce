@@ -1,0 +1,140 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+}
+
+
+.bycycleLink_1{
+    width: 100%;
+    height: 310px;
+    background-image: url(../src/img/bicycle_0.jpg);
+    background-size: 100% 100%;
+}
+
+.bycycleLink_1 .container{
+    background-color: rgba(0, 0, 0, 0.397);
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bycycleLink_1 h2{
+    color: var(--WHITESMOKE);
+    text-shadow: 2px 2px 5px var(--BGCOLOR);
+    font-size: max(1.70rem, 2vh);
+}
+
+.bycycleLink_1 .hero_1{
+    font-family: var(--FUGAZ);
+    font-size: max(1.75rem, 4vh);
+}
+
+.bycycleLink_1 .hero_2{
+    font-family: cursive, sans-serif;
+}
+
+.Home .bycycleLink_null{
+    height: 100px;
+    background-color: var(--COLOR);
+    text-align: center;
+    padding: 1rem;
+}
+
+.Home .prycycle{
+    background-color: var(--COLOR);
+    color: var(--BGCOLOR);
+    font-family: var(--ROBOTO);
+    text-align: center;
+    padding: 0.7rem 0;
+}
+
+.prycycle .container{
+    width: 90%;
+}
+
+.Home .prycycle p{
+    padding: 1rem;
+    background-color: var(--HEADER-BG);
+}
+
+
+.bycycleLink_2{
+    width: 100%;
+    height: 310px;
+    background-image: url(../src/img/bicycle_1.jpg);
+    background-size: 100% 100%;
+}
+
+.bycycleLink_2 .container{
+    background-color: rgba(0, 0, 0, 0.397);
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+    color: var(--WHITESMOKE);
+    text-shadow: 2px 2px 5px var(--BGCOLOR);
+}
+
+.bycycleLink_2 .hero_1{
+    font-family: var(--PHUDU);
+    padding-bottom: 0.2rem;
+}
+
+.bycycleLink_2 button,
+.bycycleLink_2 .hero_2{
+    font-family: var(--ROBOTO);
+}
+
+.bycycleLink_2 .hero_2{
+    padding-bottom: 0.4rem;
+}
+
+.bycycleLink_2 button{
+    background-color: var(--BGCOLOR);
+    color: var(--COLOR);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 110px;
+    height: 37px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Home .skateboard{
+    background-image: url(../src/img/skateboard.jpg);
+    width: 100%;
+    height: 310px;
+    background-size: 100% 100%;
+}
+
+.skateboard .container{
+    background-color: rgba(0, 0, 0, 0.397);
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--WHITESMOKE);
+}
+
+.skateboard .container button{
+    background-color: var(--BGCOLOR);
+    color: var(--COLOR);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 110px;
+    height: 37px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

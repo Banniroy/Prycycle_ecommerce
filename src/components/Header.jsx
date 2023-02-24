@@ -20,9 +20,12 @@ const Header = ({ openMenu, setOpenMenu }) => {
         </button>
         {openMenu && (
           <div className='menu-dropdown'>
-            <Link to="/bicyclePage">
-              Home
-            </Link>
+            <Link to="/login">Log in</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/shoppingCart">Shopping Cart</Link>
+            <Link to="/card">Card</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/contact">Contact us</Link>
           </div>
         )}
       </section>

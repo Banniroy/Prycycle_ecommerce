@@ -50,7 +50,7 @@ const App = () => {
         <Route exact path="/postProduct">
           <PostProduct />
         </Route>
-        <Route exact path="/bicyclePage">
+        <Route exact path="/shoppingCart">
           <ShoppingCart />
         </Route>
         <Route exact path="/viewProduct/:id">

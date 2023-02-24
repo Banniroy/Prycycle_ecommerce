@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import '../Css/Home.css';
 
 const Home = () => {
     return (
@@ -12,6 +12,10 @@ const Home = () => {
                         the dirt
                     </h2>
                 </div>
+            </div>
+
+            <div className='bycycleLink_null'>
+                <p>PRYCYCLE IS YOUR ONLINE SOURCE FOR BIKES, COMPONENTS, APPAREL &ACCESSORIES.</p>
             </div>
 
             <div className='bycycleLink_2'>
@@ -32,10 +36,9 @@ const Home = () => {
             </div>
 
             <div className="skateboard">
-                <button>SHOP NOW &#8594;</button>
-            </div>
-
-            <div>
+                <div className="container">
+                    <button>SHOP NOW &#8594;</button>
+                </div>
             </div>
 
         </div>
