@@ -36,7 +36,27 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 15px gray;
+}
+
+.shopping, .About, .Accessories, .BicyclePage, .Card, .Contact, .footer, .header, .Missing, .search-Form, .bycycleLink, .PostProduct, .Profile, .Skateboard, .ViewProduct{
+  width: 100vw;
+}
+
+.shopping, .About, .Accessories, .BicyclePage, .Card, .Contact, .Missing, .PostProduct, .Profile, .Skateboard, .ViewProduct{
+  flex-grow: 1;
+}
 
 .search-Form{
   background-color: var(--BGCOLOR);
@@ -163,25 +183,6 @@ body{
   font-family: cursive, sans-serif;
 }
 
-.menu_link{
-  min-height: 300px;
-  max-width: 100%;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 2.3rem auto;
-  gap: 1.7rem;
-}
-
-.menu_link div{
-  width: 180px;
-  height: 150px;
-  border-radius: 3px;
-  box-shadow: 0px 0px 4px;
-}
-
 .bycycleLink .prycycle{
   background-color: var(--BGCOLOR);
   color: var(--SEARCHBTN-COLOR);
@@ -200,52 +201,6 @@ body{
   padding: 1rem;
   background-color: var(--HEADER-BG);
 }
-
-/*  */
-
-.menu_link .bicycle-Ad{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu_link .bicycle-Ad img{
-  padding-bottom: 0.9rem;
-}
-
-.bicycle-Ad p {
-  width: 100%;
-  text-align: center;
-  font-size: 0.7rem;
-}
-
-.menu_link .skateBoard-Ad{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.skateBoard-Ad p{
-  width: 100%;
-  text-align: center;
-  font-size: 0.7rem;
-}
-
-.menu_link .sales{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sales p{
-  color: red;
-  font-size: max(1.75rem, 4vh);;
-  font-family: var(--ROBOTO);   
-}
-
-/*  */
 
 .bycycleLink_2{
   width: 100%;
@@ -316,12 +271,12 @@ a{
 .skateboard .container p{
   background-color: darkred;
   padding: 0 1rem;
-  font-size: 3rem;
   text-shadow: 3px 4px 5px var(--BGCOLOR);
   transform: rotate(-10deg);
 }
 
 footer p{
+  width: 100%;
   position: sticky;
   bottom: 0;
   background-color: var(--BGCOLOR);

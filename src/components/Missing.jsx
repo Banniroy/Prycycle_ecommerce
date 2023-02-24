@@ -1,10 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 const Missing = () => {
   return (
-    <main>
-        <h1>Missing</h1>
-    </main>
+    <div className='Missing'>Missing</div>
   )
 }
 
