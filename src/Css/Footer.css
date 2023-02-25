@@ -11,6 +11,7 @@
   --PHUDU: 'Phudu', cursive;
   --ROBOTO: 'Roboto', sans-serif;
   --BGHOMEPAGE: rgb(249, 253, 255);
+  --BGCOLOR2: whitesmoke;
 }
 
 .footer{
@@ -22,6 +23,7 @@
     color: var(--SEARCHBTN-COLOR);
     border-top: 1px solid var(--BGCOLOR);
     z-index: 1;
+    color:peachpuff;
 
     display: flex;
 }
@@ -43,3 +45,47 @@
     color: var(--GREEN);
     min-height: 20px;
 }
+
+
+/* POPUP MENU */
+
+.footer .menu-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--BGCOLOR2);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    border-top: 1px solid var(--GREEN);
+  
+    position: absolute;
+    bottom: 106%;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+}
+
+.footer .popupBtn{
+    border: none;
+}
+
+
+.footer .menu-popup .icon{
+    background-color: var(--GREEN);
+    min-width: 90%;
+    min-height: 40px;
+    color: var(--COLOR);
+    border-radius: 2px;
+    font-size: 1.3rem;
+    box-shadow: 3px 2px 5px var(--BGCOLOR);
+    text-shadow: 2px 2px 5px var(--BGCOLOR);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* POPUP MENU */

@@ -1,9 +1,30 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faUser, faPlus, faBars, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import '../Css/Footer.css';
 
 const Footer = () => {
+  const [popOpen, setpopOpen] = useState(false);
+
+  function toggleMenu() {
+    setpopOpen(!popOpen);
+  }
+
+  function handlePageClick() {
+    if (popOpen) {
+      setpopOpen(false);
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('click', handlePageClick);
+    return () => {
+      document.removeEventListener('click', handlePageClick);
+    }
+  }, [])
+
+
   return (
     <footer className='footer'>
       <Link className='link' to="/">
@@ -11,11 +32,23 @@ const Footer = () => {
           <FontAwesomeIcon className='font' icon={faHouse} />
         </section>
       </Link>
+   
       <Link className='link' to="/menuPopup">
-        <section>
+        <button
+          className='popupBtn'
+          onClick={toggleMenu}
+        >
           <FontAwesomeIcon className='font' icon={faBars} />
-        </section>
+        </button>
       </Link>
+      {popOpen && (
+        <div className='menu-popup'>
+          <Link onClick={toggleMenu} className='bicyclePage icon' to="/bicyclePage">Bikes</Link>
+          <Link onClick={toggleMenu} className='skateboard icon' to="/skateboard">SkateBoards</Link>
+          <Link onClick={toggleMenu} className='accessories icon' to="/accessories">Accessories</Link>
+        </div>
+      )}
+
       <Link className='link' to="/postProduct">
         <section>
           <FontAwesomeIcon className='font' icon={faPlus} />
