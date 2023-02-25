@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 62px;
+    height: 55px;
     background-color: var(--COLOR);
     color: var(--SEARCHBTN-COLOR);
     border-top: 1px solid var(--BGCOLOR);
@@ -20,6 +20,6 @@
 }
 
 .footer .font{
-    color: black;
+    color: var(--GREEN);
     min-height: 25px;
 }
