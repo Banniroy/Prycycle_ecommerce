@@ -90,6 +90,16 @@
     cursor: pointer;
 }
 
+.Home .accessories .container{
+    background-color: rgba(0, 0, 0, 0.397);
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--WHITESMOKE);
+}
+
 
 .skateboard .container{
     background-color: rgba(0, 0, 0, 0.397);

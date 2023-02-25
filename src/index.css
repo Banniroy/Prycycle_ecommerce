@@ -157,6 +157,13 @@ body{
     background-size: 100% 100%;
 }
 
+.Home .accessories{
+  background-image: url(../src/img/Accessories.jpg);
+  width: 100%;
+  height: 310px;
+  background-size: 100% 100%;
+}
+
 .Home .skateboard{
     background-image: url(../src/img/skateboard.jpg);
     width: 100%;
