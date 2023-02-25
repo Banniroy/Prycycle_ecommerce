@@ -34,7 +34,7 @@ const Footer = () => {
       </Link>
    
         <button
-          className='popupBtn'
+          className='popupBtn link'
           onClick={toggleMenu}
         >
           <FontAwesomeIcon className='font' icon={faBars} />
