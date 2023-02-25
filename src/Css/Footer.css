@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 50px;
+    height: 62px;
     background-color: var(--COLOR);
     color: var(--SEARCHBTN-COLOR);
     border-top: 1px solid var(--BGCOLOR);
@@ -11,10 +11,15 @@
     display: flex;
 }
 
-.footer section{
-    width: 75px;
+.footer .link{
+    width: 20%;
     border-right: 1px solid var(--BGCOLOR);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer .font{
+    color: black;
+    min-height: 25px;
 }
