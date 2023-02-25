@@ -33,10 +33,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Header
-        openMenu={openMenu}
-        setOpenMenu={setOpenMenu}
-      />
+      <Header />
       {/* <Nav
         searchQuery={setSearchQuery}
         setSearch={setSearchResults}
