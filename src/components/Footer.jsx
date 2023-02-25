@@ -33,14 +33,13 @@ const Footer = () => {
         </section>
       </Link>
    
-      <Link className='link' to="/menuPopup">
         <button
           className='popupBtn'
           onClick={toggleMenu}
         >
           <FontAwesomeIcon className='font' icon={faBars} />
         </button>
-      </Link>
+     
       {popOpen && (
         <div className='menu-popup'>
           <Link onClick={toggleMenu} className='bicyclePage icon' to="/bicyclePage">Bikes</Link>
