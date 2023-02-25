@@ -1,7 +1,7 @@
 .header{
     width: 100%;
     height: 50px;
-    background-color: var(--BGCOLOR);
+    background-color: var(--GREEN);
     padding: 0.4rem;
     position: sticky;
     top: 0;
