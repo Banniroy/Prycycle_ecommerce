@@ -80,7 +80,7 @@
 }
 
 .bycycleLink_2 button{
-    background-color: var(--BGCOLOR);
+    background-color: var(--GREEN);
     color: var(--COLOR);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 110px;
@@ -102,7 +102,7 @@
 }
 
 .skateboard .container button{
-    background-color: var(--BGCOLOR);
+    background-color: var(--GREEN);
     color: var(--COLOR);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 110px;
@@ -111,6 +111,13 @@
     outline: none;
     cursor: pointer;
 }
+
+.skateboard .container p{
+    font-family: cursive, sans-serif;
+    padding-bottom: 0.2rem;
+    font-size: max(1.75rem, 4vh);
+}
+
 
 a{
     text-decoration: none;

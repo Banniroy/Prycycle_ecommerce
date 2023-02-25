@@ -37,7 +37,10 @@ const Home = () => {
 
             <div className="skateboard">
                 <div className="container">
-                    <button>SHOP NOW &#8594;</button>
+                    <div className='label-container'>
+                        <p>It always more fun</p>
+                        <button>SHOP NOW &#8594;</button>
+                    </div>
                 </div>
             </div>
 
