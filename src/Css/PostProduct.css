@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Phudu:wght@900&family=Roboto:wght@700&display=swap');
+
+
+:root{
+  --BGCOLOR: black;
+  --COLOR: white;
+  --SEARCHBTN-COLOR: gray;
+  --RED: red;
+  --GREEN: rgb(9, 51, 27);
+  --WHITESMOKE: rgb(252, 250, 250);
+  --FUGAZ: 'Fugaz One', cursive;
+  --PHUDU: 'Phudu', cursive;
+  --ROBOTO: 'Roboto', sans-serif;
+  --BGHOMEPAGE: rgb(249, 253, 255);
+}
+
+.PostProduct .form{
+    margin: 1rem;
+}
+
+.PostProduct .label_1{
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.PostProduct .input_info{
+    width: 95%;
+    height: 40px;
+    padding-bottom: 1rem;
+}
+
+.PostProduct textarea{
+    height: 150px;
+    width: 95%;
+}
+
+.PostProduct .container{
+    margin: 2rem 0;
+    border: 1px solid var(--BGCOLOR);
+    width: 95%;
+    min-height:60px;
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.PostProduct button{
+    margin-top: 1rem;
+    width: 95%;
+    height: 30px;
+    background-color: tomato;
+    color: var(--COLOR);
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 5px var(--BGCOLOR);
+    box-shadow: 0px 0px 6px var(--BGCOLOR);
+}
+
+.PostProduct button:hover{
+    opacity: 90%;
+}
+

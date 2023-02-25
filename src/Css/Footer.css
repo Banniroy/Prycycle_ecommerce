@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Phudu:wght@900&family=Roboto:wght@700&display=swap');
+
+:root{
+  --BGCOLOR: black;
+  --COLOR: white;
+  --SEARCHBTN-COLOR: gray;
+  --RED: red;
+  --GREEN: rgb(9, 51, 27);
+  --WHITESMOKE: rgb(252, 250, 250);
+  --FUGAZ: 'Fugaz One', cursive;
+  --PHUDU: 'Phudu', cursive;
+  --ROBOTO: 'Roboto', sans-serif;
+  --BGHOMEPAGE: rgb(249, 253, 255);
+}
+
 .footer{
     width: 100%;
     position: fixed;
@@ -17,6 +32,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer .link:active,
+.footer .link:focus-within{
+    border-top: 4px solid var(--GREEN);
 }
 
 .footer .font{
