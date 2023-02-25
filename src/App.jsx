@@ -12,6 +12,7 @@ import BicyclePage from './components/BicyclePage';
 import Skateboard from './components/Skateboard';
 import Accessories from './components/Accessories';
 import Card from './components/Card';
+import MenuPopup from './components/MenuPopup';
 import ViewProduct from './components/ViewProduct';
 import Missing from './components/Missing';
 import { useState, useEffect } from 'react';
@@ -36,10 +37,10 @@ const App = () => {
         openMenu={openMenu}
         setOpenMenu={setOpenMenu}
       />
-      <Nav
+      {/* <Nav
         searchQuery={setSearchQuery}
         setSearch={setSearchResults}
-      />
+      /> */}
       <Switch>
         <Route exact path="/">
           <Home />
@@ -61,6 +62,9 @@ const App = () => {
         </Route>
         <Route path="/skateboard">
           <Skateboard />
+        </Route>
+        <Route path="/menuPopup">
+          <MenuPopup />
         </Route>
         <Route exact path="/accessories">
           <Accessories />

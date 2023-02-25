@@ -11,7 +11,7 @@ const Footer = () => {
           <FontAwesomeIcon className='font' icon={faHouse} />
         </section>
       </Link>
-      <Link className='link' to="/menu">
+      <Link className='link' to="/menuPopup">
         <section>
           <FontAwesomeIcon className='font' icon={faBars} />
         </section>

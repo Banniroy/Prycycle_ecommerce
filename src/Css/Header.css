@@ -1,3 +1,5 @@
+/* HEADER  */
+
 .header{
     width: 100%;
     height: 50px;
@@ -54,11 +56,18 @@
 .menu-icon::after{
     transform: translate(-13px, 7px);
 }
+
+/* HEADER  */
+
+/* HAMBURGER MENU */
 .menu-dropdown{
     display: flex;
     flex-direction: column;
     background-color: var(--COLOR);
     padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
   
     position: absolute;
     top: 100%;
@@ -67,3 +76,51 @@
     height: 100vh;
     z-index: 1;
 }
+
+.header .menu-dropdown .font{
+    border: 1px solid black;
+    height: 13px;
+    width: 13px;
+    border-radius: 3px;
+    background-color: var(--GREEN);
+    color: var(--COLOR);
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+.header .menu-dropdown .icon{
+    display: flex;
+    align-items: center;
+}
+
+.header .menu-dropdown .icon:active > .font,
+.header .menu-dropdown .icon:focus-within > .font{
+    background-color: var(--COLOR);
+    color: var(--BGCOLOR)
+}
+
+.header .menu-dropdown .login{
+    width: 96%;
+    height: 35px;
+    border-radius: 4px;
+    background-color: rgb(44, 148, 61);
+    color: var(--COLOR);
+    box-shadow: inset 0px 0px 15px gray;
+    text-shadow: 2px 2px 5px var(--BGCOLOR);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu-dropdown .login_icon{
+    margin-left: 0.7rem;
+    height: 21px;
+    padding-bottom: 0.2rem;
+}
+
+.header .menu-dropdown .login:hover{
+    opacity: 90%;
+}
+
+/* HAMBURGER MENU */
