@@ -60,7 +60,7 @@ body{
 
 .search-Form{
   background-color: var(--GREEN);
-  border-top: 1px solid #c2c2c2;
+  border-top: 1px solid #585656;
   padding: 0.4rem 1em 0.4rem  1em;
   display: flex;
   justify-content: flex-start;
