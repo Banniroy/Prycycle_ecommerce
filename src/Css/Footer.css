@@ -4,8 +4,7 @@
   --BGCOLOR: black;
   --COLOR: white;
   --SEARCHBTN-COLOR: gray;
-  --RED: red;
-  --GREEN: rgb(9, 51, 27);
+  --ROYALBLUE: rgb(21, 54, 153);
   --WHITESMOKE: rgb(252, 250, 250);
   --FUGAZ: 'Fugaz One', cursive;
   --PHUDU: 'Phudu', cursive;
@@ -23,7 +22,6 @@
     color: var(--SEARCHBTN-COLOR);
     border-top: 1px solid var(--BGCOLOR);
     z-index: 1;
-    color:peachpuff;
 
     display: flex;
 }
@@ -38,11 +36,11 @@
 
 .footer .link:active,
 .footer .link:focus-within{
-    border-top: 4px solid var(--GREEN);
+    border-top: 4px solid var(--ROYALBLUE);
 }
 
 .footer .font{
-    color: var(--GREEN);
+    color:var(--ROYALBLUE);
     min-height: 20px;
 }
 
@@ -59,7 +57,7 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
-    border-top: 1px solid var(--GREEN);
+    border-top: 1px solid;
   
     position: absolute;
     bottom: 106%;
@@ -75,13 +73,12 @@
 
 
 .footer .menu-popup .icon{
-    background-color: var(--GREEN);
+    background-color: rgb(44, 148, 61);
     min-width: 90%;
     min-height: 40px;
     color: var(--COLOR);
     border-radius: 2px;
     font-size: 1.3rem;
-    box-shadow: 3px 2px 5px var(--BGCOLOR);
     text-shadow: 2px 2px 5px var(--BGCOLOR);
 
     display: flex;

@@ -2,11 +2,10 @@
 
 :root{
   --BGCOLOR: black;
-  --COLOR: white;
+  --COLOR: whitesmoke;
   --SEARCHBTN-COLOR: gray;
-  --RED: red;
+  --ROYALBLUE: rgb(21, 54, 153);
   --GREEN: rgb(9, 51, 27);
-  --WHITESMOKE: rgb(252, 250, 250);
   --FUGAZ: 'Fugaz One', cursive;
   --PHUDU: 'Phudu', cursive;
   --ROBOTO: 'Roboto', sans-serif;
@@ -18,7 +17,7 @@
 .header{
     width: 100%;
     height: 50px;
-    background-color: var(--GREEN);
+    background-color: var(--COLOR);
     padding: 0.4rem;
     position: sticky;
     top: 0;
@@ -33,7 +32,7 @@
 }
   
 .header__section h1 {
-    color: var(--COLOR);
+    color: var(--BGCOLOR);
 }
   
 .menuBtn{
@@ -53,7 +52,7 @@
 .menu-icon,
 .menu-icon::before,
 .menu-icon::after{
-    background-color: var(--COLOR);
+    background-color: var(--BGCOLOR);
     height: 1px;
     width: 25px;
 }
@@ -97,7 +96,7 @@
     height: 13px;
     width: 13px;
     border-radius: 3px;
-    background-color: var(--GREEN);
+    background-color: var(--ROYALBLUE);
     color: var(--COLOR);
     padding: 0.2rem;
     margin-right: 0.5rem;

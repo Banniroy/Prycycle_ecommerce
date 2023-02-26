@@ -17,12 +17,12 @@ const Footer = () => {
     }
   }
 
-  useEffect(() => {
-    document.addEventListener('click', handlePageClick);
-    return () => {
-      document.removeEventListener('click', handlePageClick);
-    }
-  }, [])
+  // useEffect(() => {
+  //   document.addEventListener('click', handlePageClick);
+  //   return () => {
+  //     document.removeEventListener('click', handlePageClick);
+  //   }
+  // }, [])
 
 
   return (

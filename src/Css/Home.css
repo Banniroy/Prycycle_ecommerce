@@ -4,13 +4,11 @@
   --BGCOLOR: black;
   --COLOR: white;
   --SEARCHBTN-COLOR: gray;
-  --RED: red;
-  --GREEN: rgb(9, 51, 27);
+  --ROYALBLUE: rgb(21, 54, 153);
   --WHITESMOKE: rgb(252, 250, 250);
   --FUGAZ: 'Fugaz One', cursive;
   --PHUDU: 'Phudu', cursive;
   --ROBOTO: 'Roboto', sans-serif;
-  --BGHOMEPAGE: rgb(249, 253, 255);
 }
 
 .Home{
@@ -48,7 +46,10 @@
     height: 100px;
     background-color: var(--COLOR);
     text-align: center;
-    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Home .prycycle{
@@ -95,7 +96,7 @@
 }
 
 .bycycleLink_2 button{
-    background-color: var(--GREEN);
+    background-color: var(--ROYALBLUE);
     color: var(--COLOR);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 110px;
@@ -105,6 +106,11 @@
     cursor: pointer;
 }
 
+.Home .accessories{
+    margin: 0.4rem 0;
+    font-size: max(1.2rem, 2vh);
+}
+
 .Home .accessories .container{
     background-color: rgba(0, 0, 0, 0.397);
     height: inherit;
@@ -112,7 +118,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.8rem;
     color: var(--WHITESMOKE);
+}
+
+.Home .accessories p{
+    font-family: var(--ROBOTO);
+}
+
+.Home .accessories button{
+    background-color: var(--ROYALBLUE);
+    color: var(--COLOR);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: fit-content;
+    padding: 0.7rem;
+    height: 37px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 
@@ -127,7 +150,7 @@
 }
 
 .skateboard .container button{
-    background-color: var(--GREEN);
+    background-color: var(--ROYALBLUE);
     color: var(--COLOR);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 110px;

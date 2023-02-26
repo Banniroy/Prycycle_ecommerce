@@ -28,29 +28,18 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='bycycleLink_null'>
-                <p>PRYCYCLE IS YOUR ONLINE SOURCE FOR BIKES, COMPONENTS, APPAREL &ACCESSORIES.</p>
-            </div>
-
             <div className="accessories">
                 <div className='container'>
-
-                </div>
-            </div>
-
-            <div className="prycycle">
-                <div className='container'>
-                    <p>PRYCYCLE IS YOUR ONLINE SOURCE FOR BIKES, COMPONENTS, APPAREL &ACCESSORIES.</p>
-                    <h3>WE KEEP YOU PEDALING!!</h3>
+                    <p>Let Us Handle Your Bike Maintenance</p>
+                    <p>We got you covered!!</p>
+                    <button>SEE OUR SERVICES</button>
                 </div>
             </div>
 
             <div className="skateboard">
                 <div className="container">
-                    <div className='label-container'>
                         <p>It always more fun</p>
                         <button>SHOP NOW &#8594;</button>
-                    </div>
                 </div>
             </div>
 
