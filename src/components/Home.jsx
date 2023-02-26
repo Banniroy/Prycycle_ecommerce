@@ -14,10 +14,6 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='bycycleLink_null'>
-                <p>PRYCYCLE IS YOUR ONLINE SOURCE FOR BIKES, COMPONENTS, APPAREL &ACCESSORIES.</p>
-            </div>
-
             <div className='bycycleLink_2'>
                 <div className='container'>
                     <div className='label-container'>

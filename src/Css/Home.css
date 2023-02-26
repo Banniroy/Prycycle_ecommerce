@@ -18,6 +18,10 @@
     width: 100%;
 }
 
+.Home .bycycleLink_1{
+    margin-bottom: 0.4rem;
+}
+
 .bycycleLink_1 .container{
     background-color: rgba(0, 0, 0, 0.397);
     height: inherit;
