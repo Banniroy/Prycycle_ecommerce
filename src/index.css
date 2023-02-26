@@ -3,7 +3,6 @@
 
 :root{
   --BGCOLOR: black;
-  --COLOR: white;
   --SEARCHBTN-COLOR: gray;
   --RED: red;
   --GREEN: rgb(9, 51, 27);
@@ -11,7 +10,6 @@
   --FUGAZ: 'Fugaz One', cursive;
   --PHUDU: 'Phudu', cursive;
   --ROBOTO: 'Roboto', sans-serif;
-  --BGHOMEPAGE: rgb(249, 253, 255);
 }
 
 * {
@@ -28,7 +26,7 @@ body{
   min-height: 100vh;
   font-family: var(--ROBOTO);
   display: flex;
-  background-color:var(--BGHOMEPAGE);
+  background-color: white;
 }
 
 #root {
@@ -40,6 +38,7 @@ body{
 
 .App {
   width: 100%;
+  background-color: white;
   max-width: 800px;
   height: 100vh;
   display: flex;
