@@ -11,13 +11,14 @@ const BicyclePage = () => {
       try {
         const response = await api.get('/posts');
         setPosts(response.data)
+        console.log(setPosts)
       } catch (error) {
         console.log(error);
       }
     }
 
     fetchPosts()
-  }, [])
+  }, [])  
 
   return (
     <section className='BicyclePage'>
