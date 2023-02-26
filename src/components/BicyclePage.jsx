@@ -9,7 +9,7 @@ const BicyclePage = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await api.get('/posts');
+        const response = await api.get('/bikes');
         setPosts(response.data)
         console.log(setPosts)
       } catch (error) {

@@ -87,4 +87,8 @@
     align-items: center;
 }
 
+.footer button{
+    border: none;
+}
+
 /* POPUP MENU */

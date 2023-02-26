@@ -17,7 +17,7 @@ const Nav = ({ setsearchQuery, setSearchResults }) => {
 
     useEffect(() =>{
         const intervalid = setInterval(() =>{
-            const namePlaceholder = ['Giant Bicycles', 'Trek', 'Cervelo', 'Bianchi', 'Marin Bikes', 'Orbea', 'Colnago', 'BMC', 'SCOTT', 'Canyon', 'Kona', 'Cinelli', 'Pinarello', 'Trek Bicycle Corporation', 'Wiler Triestina', 'Schwinn']
+            const namePlaceholder = ['iant BicyclesG', 'Trek', 'Cervelo', 'Bianchi', 'Marin Bikes', 'Orbea', 'Colnago', 'BMC', 'SCOTT', 'Canyon', 'Kona', 'Cinelli', 'Pinarello', 'Trek Bicycle Corporation', 'Wiler Triestina', 'Schwinn']
             const randomIndex = Math.floor(Math.random() * namePlaceholder.length);
             setNamePlaceholder(namePlaceholder[randomIndex])
         }, 10000)

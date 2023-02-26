@@ -10,7 +10,7 @@ const BicyclePagePost = ({ postMapped }) => {
         <div className="img-container">{ }</div>
         <div className="info-container">
           <h2>{postMapped.title}</h2>
-          <p>{postMapped.price}</p>
+          <p>{postMapped.amount}</p>
           <p className='postDate'>{postMapped.datetime}</p>
         </div>
       </Link>

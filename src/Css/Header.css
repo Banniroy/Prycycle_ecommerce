@@ -17,7 +17,7 @@
 .header{
     width: 100%;
     height: 50px;
-    background-color: var(--COLOR);
+    background-color: var(--GREEN);
     border-bottom: 1px solid;
     padding: 0.4rem;
     position: sticky;
@@ -33,10 +33,10 @@
 }
   
 .header__section h1 {
-    color: var(--BGCOLOR);
+    color: var(--COLOR);
 }
   
-.menuBtn{
+.header .menuBtn-open{
     display: block;
     height: 30px;
     width: 35px;
@@ -47,13 +47,33 @@
     align-items: center;
     cursor: pointer;
     outline: none;
-    border: 1px solid rgb(119, 116, 116);
+    border: none;
+}
+
+.header .menuBtn-close{
+    display: block;
+    height: 30px;
+    width: 35px;
+    background-color: transparent;
+    color: red;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.header .menuBtn-close .font-close{
+    height: 30px;
+    width: 30px;
 }
   
 .menu-icon,
 .menu-icon::before,
 .menu-icon::after{
-    background-color: var(--BGCOLOR);
+    background-color: var(--COLOR);
     height: 1px;
     width: 25px;
 }
