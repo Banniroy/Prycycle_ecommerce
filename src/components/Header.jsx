@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Css/Header.css';
-import { Link, useLocation, } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { faBicycle, faSkating, faUser, faShoppingBasket, faCreditCard, faPhone, faGear, faShoppingCart, faInfo } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState, useEffect, useRef } from 'react';
