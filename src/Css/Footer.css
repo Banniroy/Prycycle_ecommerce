@@ -70,6 +70,7 @@
 
 .footer .popupBtn{
     border-right: 1px solid;
+    background-color: var(--COLOR);
 }
 
 
