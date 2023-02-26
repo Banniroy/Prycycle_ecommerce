@@ -55,6 +55,7 @@
     height: 30px;
     width: 35px;
     background-color: transparent;
+    transform: rotate(180deg);
     color: red;
     display: flex;
     position: relative;
