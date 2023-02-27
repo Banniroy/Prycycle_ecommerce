@@ -16,13 +16,21 @@
 .header{
     width: 100%;
     height: 50px;
-    background-color: var(--GREEN);
+    background-color: var(--BGCOLOR);
     border-bottom: 1px solid;
     padding: 0.4rem;
     position: sticky;
     top: 0;
     z-index: 1;
 }
+
+.header .head{
+    color: var(--COLOR);
+    display: grid;
+    place-content: center;
+    
+}
+
   
 .header__section{
     display: flex;
@@ -102,13 +110,33 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 2rem;
-  
     position: absolute;
     top: 100%;
     width: 55%;
     left: 0;
     height: 100vh;
     z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-dropdown > .menuBtn-close{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--COLOR);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+
+    position: absolute;
+    top: 100%;
+    width: 55%;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header .menu-dropdown .font{

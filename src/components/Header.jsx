@@ -8,7 +8,8 @@ const Header = ({ menuOpen, toggleMenu }) => {
   return (
     <header className='header'>
       <section className='header__section'>
-        <section className="head"></section>
+        <section className="head"><FontAwesomeIcon className='login_icon' icon={faShoppingCart} />
+        </section>
         <h1>Prycycle</h1>
 
         {(menuOpen) ? (
