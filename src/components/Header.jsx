@@ -1,14 +1,14 @@
 import React from 'react';
 import '../Css/Header.css';
 import { Link } from 'react-router-dom';
-import { faBicycle, faSkating, faUser, faShoppingBasket, faCreditCard, faPhone, faGear, faShoppingCart, faInfo, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBicycle, faSkating, faUser, faShoppingBasket, faCreditCard, faPhone, faGear, faShoppingCart, faInfo, faTimes, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = ({ menuOpen, toggleMenu }) => {
   return (
     <header className='header'>
       <section className='header__section'>
-        <section className="head"><FontAwesomeIcon className='login_icon' icon={faShoppingCart} />
+        <section className="head"><FontAwesomeIcon className='login_icon' icon={faMagnifyingGlass} />
         </section>
         <h1>Prycycle</h1>
 
