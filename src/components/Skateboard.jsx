@@ -1,8 +1,35 @@
-import React from 'react'
+import {useState, useEffect} from 'react';
+import Feeds from './Feeds';
+import api from '../api/posts';
 
 const Skateboard = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await api.get('/bikes');
+        setPosts(response.data)
+        console.log(setPosts)
+      } catch (error) {
+        console.err(error);
+      }
+    }
+
+    fetchPosts()
+  }, []) 
+
   return (
-    <div className='Skateboard'>Skateboard</div>
+ 
+    <section className='BicyclePage'>
+      {posts.length ? (
+        <Feeds posts={posts} />
+      ) : (
+        <p className='no-post' style={{ marginTop: '3rem' }}>
+          No products to display.
+        </p>
+      )}
+    </section>
   )
 }
 

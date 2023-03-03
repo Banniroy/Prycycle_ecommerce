@@ -44,10 +44,11 @@ const Footer = () => {
 
 
       {popOpen && (
-        <div className='menu-popup'>
-          <Link onClick={toggleMenu} className='bicyclePage icon' to="/bicyclePage">Bikes</Link>
-          <Link onClick={toggleMenu} className='skateboard icon' to="/skateboard">SkateBoards</Link>
-          <Link onClick={toggleMenu} className='accessories icon' to="/accessories">Accessories</Link>
+        <div  onClick={toggleMenu} className='menu-popup'>
+          <div> </div>
+          <Link  className='bicyclePage icon' to="/bicyclePage">Bikes</Link>
+          <Link  className='skateboard icon' to="/skateboard">SkateBoards</Link>
+          <Link  className='accessories icon' to="/accessories">Accessories</Link>
         </div>
 
       )}

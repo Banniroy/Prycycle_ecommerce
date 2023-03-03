@@ -13,7 +13,7 @@ const BicyclePage = () => {
         setPosts(response.data)
         console.log(setPosts)
       } catch (error) {
-        console.log(error);
+        console.err(error);
       }
     }
 
