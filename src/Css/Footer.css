@@ -46,8 +46,9 @@
 
 .footer p{
     font-size: 0.7rem;
-    font-family: var(--PHUDU);
-    color: var(--BGCOLOR);
+    font-family: sans-serif, var(--ROBOTO);
+    color: rgb(114, 107, 107);
+    font-weight: 100;
 }
 
 
