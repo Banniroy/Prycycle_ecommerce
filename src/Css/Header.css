@@ -24,6 +24,17 @@
     z-index: 1;
 }
 
+.header .searchBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.header .login_icon{
+    color: white;
+    font-size: 1.2rem;
+}
+
 .header .head{
     color: var(--COLOR);
     display: grid;
@@ -36,6 +47,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     padding: 0 0.8rem;
 }
   

@@ -13,19 +13,22 @@ import Skateboard from './components/Skateboard';
 import Accessories from './components/Accessories';
 import Card from './components/Card';
 import ViewProduct from './components/ViewProduct';
+import Services from './components/Services';
 import Missing from './components/Missing';
 import { useState, useEffect } from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
 
-
-
-
 const App = () => {
-  const [openMenuSearch, setOpenMenuSearch] = useState(false);
-  
+
+  // SEARCH OPEN & CLOSE
+  const [openSearch, setOpenSearch] = useState(false);
+  // 
   function toggleSearch() {
-    setOpenMenuSearch(!openMenuSearch);
-  }
+    setOpenSearch(!openSearch);
+  } 
+ // SEARCH OPEN & CLOSE
+
+
   // MENU OPEN & CLOSE
   const [menuOpen, setMenuOpen] = useState(false);
   // 
@@ -33,6 +36,9 @@ const App = () => {
     setMenuOpen(!menuOpen);
   }
   // MENU OPEN & CLOSE
+
+
+
   
   //SEARCH QUERY 
   const [searchResult, setSearchResults] = useState([]);
@@ -47,15 +53,13 @@ const App = () => {
     <div className='App'>
       <Header  
         menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
         toggleMenu={toggleMenu}
-        openMenuSearch={openMenuSearch}
         toggleSearch={toggleSearch}
       />
       <Nav
         searchQuery={setSearchQuery}
         setSearch={setSearchResults}
-        openMenuSearch={openMenuSearch}
+        openSearch={openSearch}
       />
       <Switch>
         <Route exact path="/">
@@ -82,6 +86,7 @@ const App = () => {
         <Route exact path="/accessories">
           <Accessories />
         </Route>
+        <Route exact path="/services" component={Services} />
         <Route exact path="/card" component={Card} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />

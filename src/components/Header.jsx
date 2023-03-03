@@ -4,11 +4,17 @@ import { Link } from 'react-router-dom';
 import { faBicycle, faSkating, faUser, faShoppingBasket, faCreditCard, faPhone, faGear, faShoppingCart, faInfo, faTimes, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Header = ({ menuOpen, toggleMenu, openMenuSearch }) => {
+const Header = ({ menuOpen, toggleMenu, toggleSearch }) => {
   return (
     <header className='header'>
       <section className='header__section'>
-        <section className="head"> <button className='magnify-btn' onClick={openMenuSearch}> <FontAwesomeIcon className='login_icon' icon={faMagnifyingGlass} /></button>
+        <section className="head">
+          <button
+            className='searchBtn'
+            onClick={toggleSearch}
+          >
+            <FontAwesomeIcon className='login_icon' icon={faMagnifyingGlass} />
+          </button>
         </section>
         <h1>PRYCYCLE</h1>
 

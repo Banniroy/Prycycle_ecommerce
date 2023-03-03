@@ -26,7 +26,7 @@ const BicyclePage = () => {
         <Feeds posts={posts} />
       ) : (
         <p className='no-post' style={{ marginTop: '3rem' }}>
-          No posts to display.
+          No products to display.
         </p>
       )}
     </section>

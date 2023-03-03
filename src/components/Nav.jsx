@@ -3,7 +3,7 @@ import '../Css/Nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-const Nav = ({ setsearchQuery, setSearchResults, openMenuSearch }) => {
+const Nav = ({ setsearchQuery, setSearchResults, openSearch }) => {
     const handleSubmit = (e) => e.preventDefault();
 
     const handleSearchChange = (e) => {
@@ -27,20 +27,22 @@ const Nav = ({ setsearchQuery, setSearchResults, openMenuSearch }) => {
 
     return (
         <nav className='search-Form'>
-            {openMenuSearch &&(
-            <form className="search" onSubmit={handleSubmit}>
-                <input
-                    className="search__input"
-                    type="text"
-                    id="search"
-                    onChange={handleSearchChange}
-                    placeholder={namePlaceholder}
-                />
-                <button className="search__button">
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                </button>
+            {openSearch && (
+                <div className='search-w'>
+                    <form className="search" onSubmit={handleSubmit}>
+                        <input
+                            className="search__input"
+                            type="text"
+                            id="search"
+                            onChange={handleSearchChange}
+                            placeholder={namePlaceholder}
+                        />
+                        <button className="search__button">
+                            <FontAwesomeIcon icon={faMagnifyingGlass} />
+                        </button>
 
-            </form>
+                    </form>
+                </div>
             )}
         </nav>
 
