@@ -3,20 +3,8 @@ import '../Css/Nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-const Nav = ({ setsearchQuery, setSearchResults }) => {
+const Nav = ({ setsearchQuery, setSearchResults, openMenuSearch }) => {
     const handleSubmit = (e) => e.preventDefault();
-
-    const [searchOpen, setSearchOpen] = useState(false);
-
-    function toggleMenu() {
-        setSearchOpen(!popOpen);
-    }
-
-    function handlePageClick() {
-        if (popOpen) {
-            setSearchOpen(false);
-        }
-    }
 
     const handleSearchChange = (e) => {
         if (!e.target.value) return setSearchResults(posts)
@@ -39,6 +27,7 @@ const Nav = ({ setsearchQuery, setSearchResults }) => {
 
     return (
         <nav className='search-Form'>
+            {openMenuSearch &&(
             <form className="search" onSubmit={handleSubmit}>
                 <input
                     className="search__input"
@@ -52,6 +41,7 @@ const Nav = ({ setsearchQuery, setSearchResults }) => {
                 </button>
 
             </form>
+            )}
         </nav>
 
     )

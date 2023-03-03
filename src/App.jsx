@@ -21,8 +21,11 @@ import { Route, Switch, useHistory } from 'react-router-dom';
 
 
 const App = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenuSearch, setOpenMenuSearch] = useState(false);
   
+  function toggleSearch() {
+    setOpenMenuSearch(!openMenuSearch);
+  }
   // MENU OPEN & CLOSE
   const [menuOpen, setMenuOpen] = useState(false);
   // 
@@ -40,18 +43,19 @@ const App = () => {
   };
   //SEARCH QUERY 
 
-  
-
   return (
     <div className='App'>
       <Header  
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
         toggleMenu={toggleMenu}
+        openMenuSearch={openMenuSearch}
+        toggleSearch={toggleSearch}
       />
       <Nav
         searchQuery={setSearchQuery}
         setSearch={setSearchResults}
+        openMenuSearch={openMenuSearch}
       />
       <Switch>
         <Route exact path="/">

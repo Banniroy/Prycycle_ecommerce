@@ -178,11 +178,19 @@
 .header .menu-dropdown .login_icon{
     margin-left: 0.7rem;
     height: 21px;
-    padding-bottom: 0.2rem;
 }
 
 .header .menu-dropdown .login:hover{
     opacity: 90%;
+}
+
+.header .header__section p{
+    margin-bottom: 2rem;
+    color: var(--BGCOLOR);
+}
+
+.header .header__section .span {
+    color: rgb(44, 148, 61);
 }
 
 /* HAMBURGER MENU */

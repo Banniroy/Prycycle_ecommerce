@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import { faBicycle, faSkating, faUser, faShoppingBasket, faCreditCard, faPhone, faGear, faShoppingCart, faInfo, faTimes, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Header = ({ menuOpen, toggleMenu }) => {
+const Header = ({ menuOpen, toggleMenu, openMenuSearch }) => {
   return (
     <header className='header'>
       <section className='header__section'>
-        <section className="head"><FontAwesomeIcon className='login_icon' icon={faMagnifyingGlass} />
+        <section className="head"> <button className='magnify-btn' onClick={openMenuSearch}> <FontAwesomeIcon className='login_icon' icon={faMagnifyingGlass} /></button>
         </section>
         <h1>PRYCYCLE</h1>
 
@@ -29,6 +29,7 @@ const Header = ({ menuOpen, toggleMenu }) => {
               <Link onClick={toggleMenu} className='about icon' to="/about"> <FontAwesomeIcon className='font' icon={faInfo} /> About us</Link>
               <Link onClick={toggleMenu} className='contact icon' to="/contact"> <FontAwesomeIcon className='font' icon={faPhone} /> Contact us</Link>
               <Link onClick={toggleMenu} className='login' to="/login">Log in <FontAwesomeIcon className='login_icon' icon={faShoppingCart} /></Link>
+              <p>Don't have an account? <Link to="/signup" className='span'>Sign up</Link></p>
             </div>
           </div>)
           : (<button

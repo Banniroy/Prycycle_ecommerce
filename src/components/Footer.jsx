@@ -30,7 +30,6 @@ const Footer = () => {
       <Link className='link' to="/">
         <section>
           <FontAwesomeIcon className='font' icon={faHouse} />
-          <p>Home</p>
         </section>
       </Link>
 
@@ -39,7 +38,6 @@ const Footer = () => {
         onClick={toggleMenu}
       >
         <FontAwesomeIcon className='font' icon={faBars} />
-        <p>Categories</p>
 
       </button>
 
@@ -57,19 +55,16 @@ const Footer = () => {
       <Link className='link' to="/postProduct">
         <section>
           <FontAwesomeIcon className='font' icon={faPlus} />
-          <p>Posts</p>
         </section>
       </Link>
       <Link className='link' to="/shoppingCart">
         <section>
           <FontAwesomeIcon className='font' icon={faCartShopping} />
-          <p>Cart</p>
         </section>
       </Link>
       <Link className='link' to="/profile">
         <section>
           <FontAwesomeIcon className='font' icon={faUser} />
-          <p>User</p>
         </section>
       </Link>
     </footer>

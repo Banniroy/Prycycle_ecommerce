@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Css/Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -19,7 +20,7 @@ const Home = () => {
                     <div className='label-container'>
                         <h3 className='hero_1'>PRYCYLE BIKES</h3>
                         <p className='hero_2'>E-Bikes, Mountain, Gravel, Road & More!</p>
-                        <button>SHOP NOW &#8594;</button>
+                        <Link to="/bicyclePage"><button>  SHOP NOW &#8594;</button></Link>
                     </div>
                 </div>
             </div>
@@ -28,14 +29,14 @@ const Home = () => {
                 <div className='container'>
                     <p>Let Us Handle Your Bike Maintenance</p>
                     <p>We got you covered!!</p>
-                    <button>SEE OUR SERVICES</button>
+                    <Link to="/services"><button>SEE OUR SERVICES</button></Link>
                 </div>
             </div>
 
             <div className="skateboard">
                 <div className="container">
                         <p>It always more fun</p>
-                        <button>SHOP NOW &#8594;</button>
+                        <Link to="/skateboard"> <button>SHOP NOW &#8594;</button></Link>
                 </div>
             </div>
 
