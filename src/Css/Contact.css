@@ -35,6 +35,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
+    padding: 0 1rem;
 }
 
 .Contact label{
@@ -44,6 +45,7 @@
 .Contact textarea{
     width: 98%;
     min-height: 200px;
+    padding: 1rem;
 }
 
 .Contact .contact-us .Message{
@@ -62,6 +64,7 @@
     box-shadow: 1px 4px 7px var(--BGCOLOR);
     text-align: center;
     margin-bottom: 4rem;
+    cursor: pointer;
 }
 
 .Contact .icon{
