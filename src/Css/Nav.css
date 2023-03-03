@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Phudu:wght@900&family=Roboto:wght@700&display=swap');
+
+:root{
+  --BGCOLOR: black;
+  --COLOR: white;
+  --SEARCHBTN-COLOR: gray;
+}
+
+.search-Form{
+    background-color: var(--BGCOLOR);
+    border-top: 1px solid #585656;
+    padding: 0.4rem 1em 0.4rem  1em;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .search {
+    width: 97%;
+    border: 2px solid var(--BGCOLOR);
+    border-radius: 2em;
+    overflow: hidden;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  
+  .search:focus-within {
+    box-shadow: 2px 2px 5px var(--BGCOLOR);
+  }
+  
+  .search__button,
+  .search__input {
+    background-color: var(--COLOR);
+    border: none;
+    outline: none;
+  }
+  
+  .search__input {
+    padding: 1em;
+    height: 40px;
+    width: 85%;
+  }
+  
+  .search__button {
+    width: 15%;
+    font-size: 1.5rem;
+    padding-right: 0.5em;
+    color: var(--SEARCHBTN-COLOR);
+    display: grid;
+    place-content: center;
+  }

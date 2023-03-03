@@ -1,9 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import '../Css/Nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = ({ setsearchQuery, setSearchResults }) => {
     const handleSubmit = (e) => e.preventDefault();
+
+    const [searchOpen, setSearchOpen] = useState(false);
+
+    function toggleMenu() {
+        setSearchOpen(!popOpen);
+    }
+
+    function handlePageClick() {
+        if (popOpen) {
+            setSearchOpen(false);
+        }
+    }
 
     const handleSearchChange = (e) => {
         if (!e.target.value) return setSearchResults(posts)
@@ -15,15 +28,15 @@ const Nav = ({ setsearchQuery, setSearchResults }) => {
 
     const [namePlaceholder, setNamePlaceholder] = useState('Cannondale');
 
-    useEffect(() =>{
-        const intervalid = setInterval(() =>{
-            const namePlaceholder = ['iant BicyclesG', 'Trek', 'Cervelo', 'Bianchi', 'Marin Bikes', 'Orbea', 'Colnago', 'BMC', 'SCOTT', 'Canyon', 'Kona', 'Cinelli', 'Pinarello', 'Trek Bicycle Corporation', 'Wiler Triestina', 'Schwinn']
+    useEffect(() => {
+        const intervalid = setInterval(() => {
+            const namePlaceholder = ['Giant Bicycles', 'Trek', 'Cervelo', 'Bianchi', 'Marin Bikes', 'Orbea', 'Colnago', 'BMC', 'SCOTT', 'Canyon', 'Kona', 'Cinelli', 'Pinarello', 'Trek Bicycle Corporation', 'Wiler Triestina', 'Schwinn']
             const randomIndex = Math.floor(Math.random() * namePlaceholder.length);
             setNamePlaceholder(namePlaceholder[randomIndex])
         }, 10000)
         return () => clearInterval(intervalid);
     }, [])
-    
+
     return (
         <nav className='search-Form'>
             <form className="search" onSubmit={handleSubmit}>
@@ -40,6 +53,7 @@ const Nav = ({ setsearchQuery, setSearchResults }) => {
 
             </form>
         </nav>
+
     )
 }
 

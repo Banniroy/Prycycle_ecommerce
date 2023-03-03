@@ -10,7 +10,7 @@ const Header = ({ menuOpen, toggleMenu }) => {
       <section className='header__section'>
         <section className="head"><FontAwesomeIcon className='login_icon' icon={faMagnifyingGlass} />
         </section>
-        <h1>Prycycle</h1>
+        <h1>PRYCYCLE</h1>
 
         {(menuOpen) ? (
           <div>

@@ -44,6 +44,12 @@
     min-height: 20px;
 }
 
+.footer p{
+    font-size: 0.7rem;
+    font-family: var(--PHUDU);
+    color: var(--BGCOLOR);
+}
+
 
 /* POPUP MENU */
 
@@ -73,7 +79,7 @@
 
 
 .footer .menu-popup .icon{
-    background-color: rgb(44, 148, 61);
+    background-color: var(--ROYALBLUE);
     min-width: 90%;
     min-height: 40px;
     color: var(--COLOR);
@@ -89,6 +95,9 @@
 
 .footer button{
     border: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.3rem;
 }
 
 /* POPUP MENU */

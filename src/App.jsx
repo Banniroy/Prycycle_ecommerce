@@ -21,8 +21,7 @@ import { Route, Switch, useHistory } from 'react-router-dom';
 
 
 const App = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResult, setSearchResults] = useState([]);
+  const [openMenu, setOpenMenu] = useState(false);
   
   // MENU OPEN & CLOSE
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,12 +31,16 @@ const App = () => {
   }
   // MENU OPEN & CLOSE
   
-
+  //SEARCH QUERY 
+  const [searchResult, setSearchResults] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  // 
   const HandleSearchInputChange = (event) => {
     setSearchQuery(event.target.value);
   };
+  //SEARCH QUERY 
 
-  const [openMenu, setOpenMenu] = useState(false);
+  
 
   return (
     <div className='App'>
@@ -46,10 +49,10 @@ const App = () => {
         setMenuOpen={setMenuOpen}
         toggleMenu={toggleMenu}
       />
-      {/* <Nav
+      <Nav
         searchQuery={setSearchQuery}
         setSearch={setSearchResults}
-      /> */}
+      />
       <Switch>
         <Route exact path="/">
           <Home />
