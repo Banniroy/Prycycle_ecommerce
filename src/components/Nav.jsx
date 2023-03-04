@@ -18,7 +18,7 @@ const Nav = ({ setsearchQuery, setSearchResults, openSearch }) => {
 
     useEffect(() => {
         const intervalid = setInterval(() => {
-            const namePlaceholder = ['Giant Bicycles', 'Trek', 'Cervelo', 'Bianchi', 'Marin Bikes', 'Orbea', 'Colnago', 'BMC', 'SCOTT', 'Canyon', 'Kona', 'Cinelli', 'Pinarello', 'Trek Bicycle Corporation', 'Wiler Triestina', 'Schwinn']
+            const namePlaceholder = ['EcoCycle','Trek','Cervelo','Bianchi','Marin Bikes','Orbea','Colnago','BMC','SCOTT','Canyon','Kona','Cinelli','Pinarello','Trek Bicycle Corporation','Wiler Triestina','Schwinn','TrailTrekker','SwiftSwitch','OffRoad','Cruiserette','6.	Carbon Cruiser','Adventure Addict','Velocity Velo','Mountain Master','Electric Explorer','Road Rascal','Dirt Devil','Turbo Thrasher','Street Strider','Street Strider','Retro Roadster','Gravel Grinder','Classic Cruiser','Adventure Ace','Carbon Climber','Electric Elite','Folding Freedom','Trailblazer','Commuter Champion','Heavy-Duty Hiker','Adventure Attitude','Classic Cruiser','Street Surfer','Mini Ripper','Retro Rider','Pro Cruiser','Speed Demon','Park Prowler','All-Terrain Assault','Longboard Legend','Electric Eager','Mini Cruiser','	Trickster','Ramp Runner','Longboard Legend','Freeride Freak','Pro Thrasher','Street Slayer','Micro Cruiser','Carving Cruiser','Rail Ripper','Electric Enthusiast','Ramp Rebel','Longboard Cruiser','Skate Safari','Mountain Mauler','Speed Racer','Freestyle Fury']
             const randomIndex = Math.floor(Math.random() * namePlaceholder.length);
             setNamePlaceholder(namePlaceholder[randomIndex])
         }, 10000)
