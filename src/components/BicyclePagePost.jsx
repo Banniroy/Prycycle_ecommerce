@@ -1,24 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../Css/BicyclePage.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-const BicyclePagePost = ({ postMapped }) => {
-  
+const BicyclePagePost = ({ productItem }) => {
+
+
+
   return (
     <article className='post'>
-      <Link className='post-con' to={`/post/${postMapped.id}`}>
+      <Link className='post-con' to={`/post/${productItem.id}`}>
         <div className="img-container">{ }</div>
         <div className="info-container">
-          <h2>{postMapped.title}</h2>
-          <p>{postMapped.amount}</p>
-          <p className='postDate'>{postMapped.datetime}</p>
+          <h3>{productItem.name}</h3>
+          <p className='price'>${productItem.price}</p>
+
         </div>
       </Link>
-      <p className='postBody'>{
-        (postMapped.body).length <= 25
-          ? postMapped.body
-          : `${(postMapped.body).slice(0, 45)}...`
-      }</p>
+      <div className='button-container'>
+        <button className='add'>Add to cart</button>
+        <button className='call'><FontAwesomeIcon className='login_icon' icon={faPhone} />Call</button>
+      </div>
     </article>
   )
 }

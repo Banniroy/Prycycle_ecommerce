@@ -9,17 +9,69 @@
 
 /* NO POST */
 
+
 .post{
-    border-bottom: 2px solid green;
+    border-top: 2px solid var(--BGCOLOR);
+    margin: 5px 0;
+    
+}
+
+.post .button-container{
+    display: flex;
+    justify-content: center;
 }
 
 .post .post-con{
     display: flex;
     flex-flow: row nowrap;
+    gap: 1rem;
 }
 
 
 .post .img-container{
-    min-height: 100px;
-    min-width: 130px;
+    min-height: 150px;
+    min-width: 37%;
+    border: 1px solid black;
+    margin-top: 0.3rem;
+}
+
+.info-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.info-container .price{
+    color: red;
+    font-size: 1.3rem;
+}
+
+.post button{
+    display: block;
+    width: 49%;
+    min-height: 39px;
+    background-color: transparent;
+    color: var(--BGCOLOR);
+    outline: none;
+    cursor: pointer;
+    margin-top: 0.3rem;
+    font-size: large;
+}
+
+.post .add{
+    border: 1px solid;
+}
+
+.post .login_icon{
+    padding-right: 0.6rem;
+    color: var(--WHITESMOKE);
+}
+
+.post .call{
+    background-color: rgb(44, 148, 61);
+    border: 1px solid;
+    color: var(--WHITESMOKE);
+    
 }

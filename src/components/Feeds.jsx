@@ -1,14 +1,16 @@
 import React from 'react';
 import BicyclePagePost from './BicyclePagePost';
+import '../Css/BicyclePage.css';
 
-const Feeds = ({ posts }) => {
+const Feeds = ({ productItems }) => {
+
 
     return (
         <>
-            {posts.map(postMapped =>(
+            {productItems.map(productItem =>(
                 <BicyclePagePost 
-                    key={postMapped.id}
-                    postMapped={postMapped}
+                    key={productItem.id}
+                    productItem={productItem}
                 /> 
             ))}
         </>
