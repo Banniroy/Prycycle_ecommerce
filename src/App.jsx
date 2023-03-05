@@ -16,7 +16,7 @@ import ViewProduct from './components/ViewProduct';
 import Services from './components/Services';
 import Missing from './components/Missing';
 import { useState, useEffect } from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 const App = () => {
 
