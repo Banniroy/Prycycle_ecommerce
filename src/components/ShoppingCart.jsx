@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const ShoppingCart = () => {
-  const [cartItems, setCartItems] = useState
+  const [cartItems, setCartItems] = useState([]);
 
   const totalPrice = cartItems.reduce((price, mappedItem) => price * mappedItem.quatity * item.price, 0);
   const handleMinuProduct = (product) => {
