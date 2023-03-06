@@ -4,8 +4,6 @@ import '../Css/BicyclePage.css';
 
 const BicyclePagePost = ({ productItem }) => {
 
-
-
   return (
     <article className='post'>
       <Link className='post-con' to={`/viewProduct/${productItem.id}`}>

@@ -4,7 +4,6 @@ import '../Css/BicyclePage.css';
 
 const Feeds = ({ productItems }) => {
 
-
     return (
         <>
             {productItems.map(productItem =>(

@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import '../Css/BicyclePage.css';
 import Feeds from './Feeds';
-import data from '../data/data';
 
-const BicyclePage = () => {
-    const { productItems } = data;
+const BicyclePage = ({ productItems }) => {
 
     return (
         <section className='BicyclePage'>

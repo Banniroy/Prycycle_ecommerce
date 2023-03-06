@@ -17,6 +17,7 @@ import Services from './components/Services';
 import Missing from './components/Missing';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import data from './data/data';
 
 const App = () => {
 
@@ -38,8 +39,6 @@ const App = () => {
   // MENU OPEN & CLOSE
 
 
-
-  
   //SEARCH QUERY 
   const [searchResult, setSearchResults] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -48,6 +47,10 @@ const App = () => {
     setSearchQuery(event.target.value);
   };
   //SEARCH QUERY 
+
+  // DISPLAY DATA
+  const { productItems } = data;
+  // DISPLAY DATA
 
   return (
     <div className='App'>
@@ -75,10 +78,14 @@ const App = () => {
           <ShoppingCart />
         </Route>
         <Route exact path="/viewProduct/:id">
-          <ViewProduct />
+          <ViewProduct 
+            productItems={productItems}
+          />
         </Route>
         <Route path="/bicyclePage">
-          <BicyclePage />
+          <BicyclePage 
+            productItems={productItems}
+          />
         </Route>
         <Route path="/skateboard">
           <Skateboard />

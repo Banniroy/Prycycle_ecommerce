@@ -1,6 +1,7 @@
 .ViewProduct{
     display: flex;
     flex-flow: column nowrap;
+    margin-bottom: 7rem;
 }
 
 .ViewProduct .image-container{
@@ -27,7 +28,7 @@
 .ViewProduct .information{
     width: 98%;
     margin: 1rem auto;
-    min-height: 180px;
+    min-height: 39vh;
     border: 1px solid;
 }
 
