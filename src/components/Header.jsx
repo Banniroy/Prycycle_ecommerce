@@ -16,7 +16,7 @@ const Header = ({ menuOpen, toggleMenu, toggleSearch }) => {
             <FontAwesomeIcon className='login_icon' icon={faMagnifyingGlass} />
           </button>
         </section>
-        <h1>PRYCYCLE</h1>
+        <h1><span className='header-name-portion'>PRY</span><span className="header-name-portion-2">CYCLE</span></h1>
 
         {(menuOpen) ? (
           <div>

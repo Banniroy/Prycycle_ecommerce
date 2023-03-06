@@ -53,11 +53,13 @@
     width: 98%;
     min-height: 39px;
     background-color: rgb(44, 148, 61);
-    color: var(--BGCOLOR);
+    color: var(--WHITESMOKE);
     outline: none;
     cursor: pointer;
     margin-top: 0.3rem;
     font-size: large;
+
+    font-weight: 700;
 }
 
 

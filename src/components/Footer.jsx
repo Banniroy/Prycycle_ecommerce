@@ -46,6 +46,7 @@ const Footer = () => {
       {popOpen && (
         <div  onClick={toggleMenu} className='menu-popup'>
           <div> </div>
+          <h2>Search by product category</h2>
           <Link  className='bicyclePage icon' to="/bicyclePage">Bikes</Link>
           <Link  className='skateboard icon' to="/skateboard">SkateBoards</Link>
           <Link  className='accessories icon' to="/accessories">Accessories</Link>

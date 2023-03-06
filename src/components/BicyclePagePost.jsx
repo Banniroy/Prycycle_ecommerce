@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../Css/BicyclePage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 
 const BicyclePagePost = ({ productItem }) => {
 
@@ -19,8 +17,7 @@ const BicyclePagePost = ({ productItem }) => {
         </div>
       </Link>
       <div className='button-container'>
-        <button className='add'><FontAwesomeIcon className='login_icon' icon={faBasketShopping} />Add to cart</button>
-        
+        <button className='add'>Add to Cart</button>
       </div>
     </article>
   )

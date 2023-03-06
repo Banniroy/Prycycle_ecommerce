@@ -14,8 +14,8 @@
   }
 
   .search-Form .search-w{
-    background-color: black;
-    border-top: 1px solid #585656;
+    background-color: var(--COLOR);
+    border-bottom: 1px solid #585656;
     height: 59px;
     padding: 0.4rem 1em 0.4rem  1em;
     width: 100%;
@@ -50,11 +50,16 @@
     height: 40px;
     width: 85%;
   }
+
+  .search .search__button .magnifyer{
+    color: var(--WHITESMOKE);
+  }
   
-  .search__button {
+  .search .search__button {
     width: 15%;
     font-size: 1.5rem;
     padding-right: 0.5em;
+    background-color: rgb(44, 148, 61);
     color: var(--SEARCHBTN-COLOR);
     display: grid;
     place-content: center;

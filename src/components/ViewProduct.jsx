@@ -12,7 +12,7 @@ const ViewProduct = () => {
         <div className="information">{}</div>
         <div className="button-container">
           <button className="add-to-cart"><FontAwesomeIcon className='login_icon' icon={faBasketShopping} />Add to cart</button>
-          <button className="order">Order</button>
+          <button className="order">Buy Now</button>
         </div>
     </section>
   )

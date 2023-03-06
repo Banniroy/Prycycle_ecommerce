@@ -38,7 +38,7 @@ const Nav = ({ setsearchQuery, setSearchResults, openSearch }) => {
                             placeholder={namePlaceholder}
                         />
                         <button className="search__button">
-                            <FontAwesomeIcon icon={faMagnifyingGlass} />
+                            <FontAwesomeIcon icon={faMagnifyingGlass} className="magnifyer"/>
                         </button>
 
                     </form>

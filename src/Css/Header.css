@@ -5,8 +5,8 @@
   --COLOR: white;
   --SEARCHBTN-COLOR: gray;
   --GREEN: rgb(9, 51, 27);
-  --FUGAZ: 'Fugaz One', cursive;
-  --PHUDU: 'Phudu', cursive;
+  --FUGAZ: 'Fugaz One', sans-serif;
+  --PHUDU: 'Phudu', sans-serif;
   --ROBOTO: 'Roboto', sans-serif;
   --BGHOMEPAGE: rgb(249, 253, 255);
 }
@@ -16,12 +16,21 @@
 .header{
     width: 100%;
     height: 50px;
-    background-color: var(--BGCOLOR);
+    background-color: var(--WHITESMOKE);
     border-bottom: 1px solid;
     padding: 0.4rem;
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+.header .header-name-portion{
+    font-family: var(--FUGAZ);
+    color: var(--ROYALBLUE);
+}
+
+.header .header-name-portion-2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .header .searchBtn{
@@ -30,10 +39,19 @@
     outline: none;
 }
 
-.header .login_icon{
-    color: white;
+/* LOGIN BUTTON*/
+
+.header .login .login_icon{
     font-size: 1.2rem;
 }
+
+.header .login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGIN BUTTON */
 
 .header .head{
     color: var(--COLOR);
@@ -41,7 +59,6 @@
     place-content: center;
     
 }
-
   
 .header__section{
     display: flex;
@@ -52,7 +69,7 @@
 }
   
 .header__section h1 {
-    color: var(--COLOR);
+    color: var(--BGCOLOR);
 }
   
 .header .menuBtn-open{
@@ -75,7 +92,7 @@
     width: 35px;
     background-color: transparent;
     transform: rotate(180deg);
-    color: var(--COLOR);
+    color: red;
     display: flex;
     position: relative;
     justify-content: center;
@@ -93,7 +110,7 @@
 .menu-icon,
 .menu-icon::before,
 .menu-icon::after{
-    background-color: var(--COLOR);
+    background-color: var(--BGCOLOR);
     height: 1px;
     width: 25px;
 }
