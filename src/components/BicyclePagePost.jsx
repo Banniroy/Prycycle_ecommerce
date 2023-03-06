@@ -10,7 +10,7 @@ const BicyclePagePost = ({ productItem }) => {
 
   return (
     <article className='post'>
-      <Link className='post-con' to={`/post/${productItem.id}`}>
+      <Link className='post-con' to={`/viewProduct/${productItem.id}`}>
         <div className="img-container">{ }</div>
         <div className="info-container">
           <h3>{productItem.name}</h3>
