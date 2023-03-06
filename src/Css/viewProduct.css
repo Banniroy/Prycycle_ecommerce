@@ -48,9 +48,9 @@
     background-color: rgba(44, 148, 61, 0.363);
     font-size: large;
     cursor: pointer;
-    color: rgb(44, 148, 61);
+    color: var(--BUTTON-COLOR);
     outline: none;
-    border: 2px solid rgb(44, 148, 61);
+    border: 2px solid var(--BUTTON-COLOR);
     font-weight: 700;
     border-radius: 4px;
 
@@ -64,12 +64,12 @@
 .ViewProduct .button-container .order{
     min-width: 48%;
     height: 40px;
-    background-color: rgb(44, 148, 61);
+    background-color: var(--BUTTON-COLOR);
     font-size: large;
     cursor: pointer;
     outline: none;
     color: var(--WHITESMOKE);
-    border: 1px solid rgb(44, 148, 61);
+    border: 1px solid var(--BUTTON-COLOR);
     font-weight: 600;
     border-radius: 4px;
 }

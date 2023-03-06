@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: var(--RED);
 }
 
 /* NO POST */
@@ -31,7 +31,7 @@
 .post .img-container{
     min-height: 150px;
     min-width: 39%;
-    border: 1px solid black;
+    border: 1px solid;
     margin-top: 0.3rem;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .info-container .price{
-    color: red;
+    color: var(--RED);
     font-size: 1.3rem;
 }
 
@@ -52,12 +52,13 @@
     display: block;
     width: 98%;
     min-height: 39px;
-    background-color: rgb(44, 148, 61);
+    background-color: var(--BUTTON-COLOR);
     color: var(--WHITESMOKE);
     outline: none;
     cursor: pointer;
     margin-top: 0.3rem;
     font-size: large;
+    border-radius: 4px;
 
     font-weight: 700;
 }

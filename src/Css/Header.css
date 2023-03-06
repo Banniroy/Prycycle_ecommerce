@@ -1,16 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Phudu:wght@900&family=Roboto:wght@700&display=swap');
-
-:root{
-  --BGCOLOR: black;
-  --COLOR: white;
-  --SEARCHBTN-COLOR: gray;
-  --GREEN: rgb(9, 51, 27);
-  --FUGAZ: 'Fugaz One', sans-serif;
-  --PHUDU: 'Phudu', sans-serif;
-  --ROBOTO: 'Roboto', sans-serif;
-  --BGHOMEPAGE: rgb(249, 253, 255);
-}
-
 /* HEADER  */
 
 .header{
@@ -92,7 +79,7 @@
     width: 35px;
     background-color: transparent;
     transform: rotate(180deg);
-    color: red;
+    color: var(--RED);
     display: flex;
     position: relative;
     justify-content: center;
@@ -145,7 +132,7 @@
     left: 0;
     height: 100vh;
     z-index: 1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px var(--BOX-SHADOW-COLOR);
 }
 
 .menu-dropdown > .menuBtn-close{
@@ -165,11 +152,11 @@
     left: 0;
     height: 100vh;
     z-index: 1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px var(--BOX-SHADOW-COLOR);
 }
 
 .header .menu-dropdown .font{
-    border: 1px solid black;
+    border: 1px solid;
     height: 13px;
     width: 13px;
     border-radius: 3px;
@@ -194,7 +181,7 @@
     width: 96%;
     height: 35px;
     border-radius: 4px;
-    background-color: rgb(44, 148, 61);
+    background-color: var(--BUTTON-COLOR);
     color: var(--COLOR);
     box-shadow: 1px 4px 7px var(--BGCOLOR);
     text-shadow: 2px 2px 5px var(--BGCOLOR);
@@ -219,7 +206,7 @@
 }
 
 .header .header__section .span {
-    color: rgb(44, 148, 61);
+    color: var(--BUTTON-COLOR);
 }
 
 /* HAMBURGER MENU */

@@ -1,16 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Phudu:wght@900&family=Roboto:wght@700&display=swap');
-
-:root{
-  --BGCOLOR: black;
-  --COLOR: white;
-  --SEARCHBTN-COLOR: gray;
-  --ROYALBLUE: rgb(21, 54, 153);
-  --WHITESMOKE: rgb(252, 250, 250);
-  --FUGAZ: 'Fugaz One', cursive;
-  --PHUDU: 'Phudu', cursive;
-  --ROBOTO: 'Roboto', sans-serif;
-}
-
 .Home{
     display: flex;
     flex-direction: column;
@@ -23,7 +10,7 @@
 }
 
 .bycycleLink_1 .container{
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: var(--BICYCLE-CONTAINER-BGCOLOR);
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -40,7 +27,7 @@
 .bycycleLink_1 .hero_1{
     font-family: var(--FUGAZ);
     font-size: max(1.75rem, 4vh);
-    color: rgb(203, 216, 205);
+    color: var(--POPUP-BGCOLOR);
 }
 
 .bycycleLink_1 .hero_2{
@@ -71,7 +58,7 @@
 
 .Home .prycycle p{
     padding: 1rem;
-    background-color: var(--HEADER-BG);
+    background-color: var(--COLOR);
 }
 
 .bycycleLink_2 .container{
@@ -117,7 +104,7 @@
 }
 
 .Home .accessories .container{
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: var(--BICYCLE-CONTAINER-BGCOLOR);
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -145,7 +132,7 @@
 
 
 .skateboard .container{
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: var(--BICYCLE-CONTAINER-BGCOLOR);
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -170,7 +157,6 @@
     padding-bottom: 0.2rem;
     font-size: max(1.75rem, 4vh);
 }
-
 
 a{
     text-decoration: none;

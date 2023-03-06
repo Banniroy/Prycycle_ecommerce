@@ -3,10 +3,20 @@
 
 :root{
   --BGCOLOR: black;
+  --BOX-SHADOW-COLOR: rgba(0, 0, 0, 0.2);
+  --BICYCLE-CONTAINER-BGCOLOR: rgba(0, 0, 0, 0.397);
   --SEARCHBTN-COLOR: gray;
+  --BUTTON-COLOR: rgb(44, 148, 61);
   --RED: red;
   --GREEN: rgb(9, 51, 27);
+  --POPUP-BGCOLOR: rgb(221, 221, 221);
+  --COLOR: white;
   --WHITESMOKE: rgb(252, 250, 250);
+  --ROYALBLUE: rgb(21, 54, 153);
+  --BGCOLOR2: whitesmoke;
+
+
+  
   --FUGAZ: 'Fugaz One', cursive;
   --PHUDU: 'Phudu', cursive;
   --ROBOTO: 'Roboto', sans-serif;
@@ -20,13 +30,14 @@
 
 html{
   font-size: 16px;
+  min-height: 100vh;
 }
 
 body{
   min-height: 100vh;
   font-family: var(--ROBOTO);
   display: flex;
-  background-color: white;
+  background-color: var(--COLOR);
 }
 
 #root {
@@ -38,21 +49,19 @@ body{
 
 .App {
   width: 100%;
-  background-color: white;
   min-height: 100vh;
+  background-color: var(--COLOR);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid #333;
-  box-shadow: 0px 0px 15px gray;
 }
 
-.shopping, .About, .Accessories, .BicyclePage, .Card, .Contact, .footer, .header, .Missing, .search-Form, .Home, .PostProduct, .Profile, .Skateboard, .ViewProduct{
+.shopping, .About, .Accessories, .BicyclePage, .Card, .Contact, .footer, .header, .Missing, .search-Form, .Home, .PostProduct, .Profile, .Skateboard, .ViewProduct, .cart-items{
   width: 100vw;
 }
 
-.shopping, .About, .Accessories, .BicyclePage, .Card, .Contact, .Missing, .PostProduct, .Profile, .Skateboard, .ViewProduct{
+.shopping, .About, .Accessories, .BicyclePage, .Card, .Contact, .Missing, .PostProduct, .Profile, .Skateboard, .ViewProduct, .cart-items{
   flex-grow: 1;
 }
 
