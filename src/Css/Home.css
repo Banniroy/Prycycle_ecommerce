@@ -40,6 +40,9 @@
 .bycycleLink_1 .hero_1{
     font-family: var(--FUGAZ);
     font-size: max(1.75rem, 4vh);
+    background: linear-gradient(to right, var(--WHITESMOKE) 70%, rgb(151, 216, 162));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .bycycleLink_1 .hero_2{

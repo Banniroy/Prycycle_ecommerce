@@ -28,7 +28,7 @@
 .ViewProduct .information{
     width: 98%;
     margin: 1rem auto;
-    min-height: 39vh;
+    min-height: 190px;
     border: 1px solid;
 }
 
@@ -48,9 +48,9 @@
     background-color: rgba(44, 148, 61, 0.363);
     font-size: large;
     cursor: pointer;
-    color: rgb(44, 148, 61);;
+    color: rgb(44, 148, 61);
     outline: none;
-    border: none;
+    border: 2px solid rgb(44, 148, 61);
     font-weight: 700;
     border-radius: 4px;
 
@@ -69,7 +69,7 @@
     cursor: pointer;
     outline: none;
     color: var(--WHITESMOKE);
-    border: 1px solid;
+    border: 1px solid rgb(44, 148, 61);
     font-weight: 600;
     border-radius: 4px;
 }
