@@ -13,7 +13,7 @@
 .post{
     border-top: 2px solid var(--BGCOLOR);
     margin: 5px 0;
-    
+    font-family: var(--ROBOTO);
 }
 
 .post .button-container{
@@ -30,7 +30,7 @@
 
 .post .img-container{
     min-height: 150px;
-    min-width: 37%;
+    min-width: 39%;
     border: 1px solid black;
     margin-top: 0.3rem;
 }
@@ -50,9 +50,9 @@
 
 .post button{
     display: block;
-    width: 49%;
+    width: 98%;
     min-height: 39px;
-    background-color: transparent;
+    background-color: rgb(44, 148, 61);
     color: var(--BGCOLOR);
     outline: none;
     cursor: pointer;
@@ -60,18 +60,8 @@
     font-size: large;
 }
 
-.post .add{
-    border: 1px solid;
-}
+
 
 .post .login_icon{
     padding-right: 0.6rem;
-    color: var(--WHITESMOKE);
-}
-
-.post .call{
-    background-color: rgb(44, 148, 61);
-    border: 1px solid;
-    color: var(--WHITESMOKE);
-    
 }

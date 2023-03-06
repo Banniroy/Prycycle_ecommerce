@@ -39,7 +39,6 @@ body{
 .App {
   width: 100%;
   background-color: white;
-  max-width: 800px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

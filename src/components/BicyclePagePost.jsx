@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../Css/BicyclePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 
 const BicyclePagePost = ({ productItem }) => {
 
@@ -19,8 +19,8 @@ const BicyclePagePost = ({ productItem }) => {
         </div>
       </Link>
       <div className='button-container'>
-        <button className='add'>Add to cart</button>
-        <button className='call'><FontAwesomeIcon className='login_icon' icon={faPhone} />Call</button>
+        <button className='add'><FontAwesomeIcon className='login_icon' icon={faBasketShopping} />Add to cart</button>
+        
       </div>
     </article>
   )
