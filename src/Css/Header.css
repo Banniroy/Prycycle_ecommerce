@@ -126,7 +126,7 @@
   width: 100%;
   height: 100vh;
   z-index: 0;
-  background-color: black;
+  background-color: var(--BICYCLE-CONTAINER-BGCOLOR);
 }
 
 .menu-dropdown{
