@@ -25,7 +25,7 @@ const Header = ({ menuOpen, toggleMenu, toggleSearch }) => {
               onClick={toggleMenu}>
               <div className='menu-ic'><FontAwesomeIcon className='font-close' icon={faTimes} /></div>
             </button>
-            <div className="background-container">
+            <div className="background-container" onClick={toggleMenu} >
             <div className='menu-dropdown'>
               <Link onClick={toggleMenu} className='bicyclePage icon' to="/bicyclePage"> <FontAwesomeIcon className='font' icon={faBicycle} /> Bikes</Link>
               <Link onClick={toggleMenu} className='skateboard icon' to="/skateboard"> <FontAwesomeIcon className='font' icon={faSkating} /> SkateBoards</Link>
