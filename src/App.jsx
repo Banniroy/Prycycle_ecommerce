@@ -17,7 +17,6 @@ import Services from './components/Services';
 import Missing from './components/Missing';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import data from './data/data';
 
 const App = () => {
 
@@ -48,9 +47,6 @@ const App = () => {
   };
   //SEARCH QUERY 
 
-  // DISPLAY DATA
-  const { productItems } = data;
-  // DISPLAY DATA
 
   return (
     <div className='App'>
@@ -79,12 +75,12 @@ const App = () => {
         </Route>
         <Route exact path="/viewProduct/:id">
           <ViewProduct 
-            productItems={productItems}
+            
           />
         </Route>
         <Route path="/bicyclePage">
           <BicyclePage 
-            productItems={productItems}
+            
           />
         </Route>
         <Route path="/skateboard">
