@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../Css/Footer.css';
 
-const Footer = ({toggleMenu}) => {
+const Footer = ({ toggleMenu , menuOpen}) => {
   const [popOpen, setpopOpen] = useState(false);
 
   function toggleMenu() {
@@ -27,7 +27,8 @@ const Footer = ({toggleMenu}) => {
 
   return (
     <footer className='footer'>
-      <div className="background-containee" onClick={toggleMenu}></div>
+      {menuOpen && (
+      <div className="background-containee" onClick={toggleMenu}></div>)}
       <Link className='link' to="/">
         <section>
           <FontAwesomeIcon className='font' icon={faHouse} />
