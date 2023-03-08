@@ -99,10 +99,7 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Route path="*" component={Missing} />
       </Switch>
-      <Footer 
-       toggleMenu={toggleMenu}
-       menuOpen={menuOpen}
-      />
+      <Footer />
     </div>
   )
 }
