@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Feeds from './Feeds';
-import data from '../data/data2';
 
 const Skateboard = () => {
   const { productItems } = data;
