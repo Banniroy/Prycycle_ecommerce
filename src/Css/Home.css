@@ -1,8 +1,9 @@
 .Home{
     display: flex;
     flex-direction: column;
-    flex-grow: 0.3;
+    flex-grow: 1;
     width: 100%;
+    z-index: 0.2;
 }
 
 .Home .bycycleLink_1{
