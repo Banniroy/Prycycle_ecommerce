@@ -101,6 +101,7 @@ const App = () => {
       </Switch>
       <Footer 
        toggleMenu={toggleMenu}
+       menuOpen={menuOpen}
       />
     </div>
   )
