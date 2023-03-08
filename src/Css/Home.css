@@ -1,7 +1,7 @@
 .Home{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 0.3;
     width: 100%;
 }
 
