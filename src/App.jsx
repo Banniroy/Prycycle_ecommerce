@@ -17,16 +17,21 @@ import Services from './components/Services';
 import Missing from './components/Missing';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import instance from './firebase/firebaseStorage';
+import { ref, getDownloadURL } from 'firebase/storage';
+import storage from './firebase/firebaseStorage';
 
 const App = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await instance.get('/data/bicycle.json');
-        setPosts(response.data)
-        console.log(setPosts)
+        const fileRef = ref(storage, "/data/bicycle.json");
+        const url = await getDownloadURL(fileRef);
+
+        const data = await fetch(url)
+        const response = await data.json();
+        Posts(response)
+        console.log(Posts)
       } catch (error) {
         console.log(error);
       }

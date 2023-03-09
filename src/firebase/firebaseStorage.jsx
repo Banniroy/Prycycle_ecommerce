@@ -18,9 +18,4 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Storage and get a reference to the service
 const storage = getStorage(app)
 
-
-const instance = axios.create({
-    baseURL: "https://storage.googlepis.com/prycycle-website.appspot.com"
-});
-
-export default instance;
+export default storage;
