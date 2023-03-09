@@ -30,8 +30,8 @@ const App = () => {
 
         const data = await fetch(url)
         const response = await data.json();
-        Posts(response)
-        console.log(Posts)
+        setPosts(response)
+        console.log(setPosts)
       } catch (error) {
         console.log(error);
       }
