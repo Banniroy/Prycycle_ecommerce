@@ -17,8 +17,23 @@ import Services from './components/Services';
 import Missing from './components/Missing';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import instance from './firebase/firebaseStorage';
 
 const App = () => {
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await instance.get('/data/bicycle.json');
+        setPosts(response.data)
+        console.log(setPosts)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    fetchPosts()
+  }, []) 
 
   // SEARCH OPEN & CLOSE
   const [openSearch, setOpenSearch] = useState(false);

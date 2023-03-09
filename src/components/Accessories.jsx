@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import Feeds from './Feeds';
-import api from '../api/posts';
 
 const Accessories = () => {
 
@@ -9,7 +8,7 @@ const Accessories = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await api.get('/bikes');
+        const response = await firebaseApiStorage.get('/');
         setPosts(response.data)
         console.log(setPosts)
       } catch (error) {
