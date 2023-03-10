@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import About from './components/About';
@@ -58,7 +59,7 @@ const App = () => {
         const fileRef = ref(storage, "/data/bicycle.json");
         const url = await getDownloadURL(fileRef);
 
-        const data = await fetch(url)
+        const response = await axios.get(url, { baseURL: https://storage.googleapis.com/bicycle-website-3a0d9.appspot.com/ });
         const response = await data.json();
         setAccessoriesPosts(response)
         console.log(setAccessoriesPosts)
@@ -77,7 +78,7 @@ const App = () => {
         const fileRef = ref(storage, "/data/bicycle.json");
         const url = await getDownloadURL(fileRef);
 
-        const data = await fetch(url)
+        const response = await axios.get(url, { baseURL: https://storage.googleapis.com/bicycle-website-3a0d9.appspot.com/ });
         const response = await data.json();
         setSkateboardPosts(response)
         console.log(setSkateboardPosts)
