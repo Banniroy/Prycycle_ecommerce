@@ -34,23 +34,22 @@ const App = () => {
 
 
   useEffect(() => {
-    const fetchBicyclePosts = async () => {
+   const fetchBicyclePosts = async () => {
+    try {
+      const fileRef = ref(storage, "/data/bicycle.json");
+      const url = await getDownloadURL(fileRef);
 
-      try {
-        const fileRef = ref(storage, "/data/bicycle.json");
-        const url = await getDownloadURL(fileRef);
-
-        const data = await fetch(url)
-        const response = await data.json();
-        setBicyclePosts(response)
-        console.log(setBicyclePosts)
-      } catch (error) {
-        console.log(error);
-      }
+      const response = await axios.get(url, { baseURL: https://storage.googleapis.com/bicycle-website-3a0d9.appspot.com/ });
+      setBicyclePosts(response.data);
+      console.log(setBicyclePosts);
+    } catch (error) {
+      console.log(error);
     }
+   };
 
-    fetchBicyclePosts()
-  }, [])
+   fetchBicyclePosts();
+  }, []);
+
 
   useEffect(() => {
     const fetchAccessoriesPosts = async () => {
