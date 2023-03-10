@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../Css/Nav.css';
+import '../components/Css/Nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 

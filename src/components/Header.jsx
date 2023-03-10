@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Css/Header.css';
+import '../components/Css/Header.css';
 import { Link } from 'react-router-dom';
 import { faBicycle, faSkating, faUser, faShoppingBasket, faCreditCard, faPhone, faGear, faShoppingCart, faInfo, faTimes, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

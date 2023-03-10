@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Css/viewProduct.css';
+import '../components/Css/viewProduct.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 

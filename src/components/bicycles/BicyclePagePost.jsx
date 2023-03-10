@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../Css/BicyclePage.css';
+import '../Css/AllproductCategories.css';
 
-const BicyclePagePost = ({ productItem }) => {
+const BicyclePagePost = ({ postMapped }) => {
 
   return (
     <article className='post'>
-      <Link className='post-con' to={`/viewProduct/${productItem.id}`}>
+      <Link className='post-con' to={`/viewProduct/${postMapped.id}`}>
         <div className="img-container">{ }</div>
         <div className="info-container">
-          <h3>{productItem.name}</h3>
-          <p className='price'>${productItem.price}</p>
+          <h3>{postMapped.name}</h3>
+          <p className='price'>${postMapped.price}</p>
 
         </div>
       </Link>

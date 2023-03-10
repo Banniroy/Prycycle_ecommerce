@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Css/Contact.css';
+import '../components/Css/Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faUser, faPhone, faMessage } from '@fortawesome/free-solid-svg-icons';
 

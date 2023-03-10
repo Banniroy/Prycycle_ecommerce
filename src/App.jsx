@@ -8,9 +8,9 @@ import Footer from './components/Footer';
 import Profile from './components/Profile';
 import PostProduct from './components/PostProduct';
 import ShoppingCart from './components/ShoppingCart';
-import BicyclePage from './components/BicyclePage';
-import Skateboard from './components/Skateboard';
-import Accessories from './components/Accessories';
+import BicyclePage from './components/bicycles/BicyclePage';
+import Skateboard from './components/skateboards/Skateboard';
+import Accessories from './components/accessories/Accessories'
 import Card from './components/Card';
 import ViewProduct from './components/ViewProduct';
 import Services from './components/Services';
@@ -22,55 +22,90 @@ import storage from './firebase/firebaseStorage';
 
 const App = () => {
 
+  const [Bicycleposts, setBicyclePosts] = useState([]);
+  const [Skateboardposts, setSkateboardPosts] = useState([]);
+  const [Accessoriesposts, setAccessoriesPosts] = useState([]);
+
+  const [openSearch, setOpenSearch] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [searchResult, setSearchResults] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+
+
+
   useEffect(() => {
-    const fetchPosts = async () => {
+    const fetchBicyclePosts = async () => {
+
       try {
         const fileRef = ref(storage, "/data/bicycle.json");
         const url = await getDownloadURL(fileRef);
 
         const data = await fetch(url)
         const response = await data.json();
-        setPosts(response)
-        console.log(setPosts)
+        setBicyclePosts(response)
+        console.log(setBicyclePosts)
       } catch (error) {
         console.log(error);
       }
     }
 
-    fetchPosts()
-  }, []) 
+    fetchBicyclePosts()
+  }, [])
 
-  // SEARCH OPEN & CLOSE
-  const [openSearch, setOpenSearch] = useState(false);
-  // 
+  useEffect(() => {
+    const fetchAccessoriesPosts = async () => {
+
+      try {
+        const fileRef = ref(storage, "/data/bicycle.json");
+        const url = await getDownloadURL(fileRef);
+
+        const data = await fetch(url)
+        const response = await data.json();
+        setAccessoriesPosts(response)
+        console.log(setAccessoriesPosts)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    fetchAccessoriesPosts()
+  }, [])
+
+  useEffect(() => {
+    const fetchSkateboardsPosts = async () => {
+
+      try {
+        const fileRef = ref(storage, "/data/bicycle.json");
+        const url = await getDownloadURL(fileRef);
+
+        const data = await fetch(url)
+        const response = await data.json();
+        setSkateboardPosts(response)
+        console.log(setSkateboardPosts)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    fetchSkateboardsPosts()
+  }, [])
+
+
   function toggleSearch() {
     setOpenSearch(!openSearch);
-  } 
- // SEARCH OPEN & CLOSE
+  }
 
-
-  // MENU OPEN & CLOSE
-  const [menuOpen, setMenuOpen] = useState(false);
-  // 
   function toggleMenu() {
     setMenuOpen(!menuOpen);
   }
-  // MENU OPEN & CLOSE
 
-
-  //SEARCH QUERY 
-  const [searchResult, setSearchResults] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  // 
   const HandleSearchInputChange = (event) => {
     setSearchQuery(event.target.value);
   };
-  //SEARCH QUERY 
-
 
   return (
     <div className='App'>
-      <Header  
+      <Header
         menuOpen={menuOpen}
         toggleMenu={toggleMenu}
         toggleSearch={toggleSearch}
@@ -82,7 +117,9 @@ const App = () => {
       />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home
+
+          />
         </Route>
         <Route exact path="/profile">
           <Profile />
@@ -94,20 +131,25 @@ const App = () => {
           <ShoppingCart />
         </Route>
         <Route exact path="/viewProduct/:id">
-          <ViewProduct 
-            
+          <ViewProduct
+
           />
         </Route>
         <Route path="/bicyclePage">
-          <BicyclePage 
-            
+          <BicyclePage
+            Bicycleposts={Bicycleposts}
           />
         </Route>
         <Route path="/skateboard">
-          <Skateboard />
+          <Skateboard
+            Skateboardposts={Skateboardposts}
+          />
         </Route>
         <Route exact path="/accessories">
-          <Accessories />
+          <Accessories
+            Accessoriesposts={Accessoriesposts}
+
+          />
         </Route>
         <Route exact path="/services" component={Services} />
         <Route exact path="/card" component={Card} />

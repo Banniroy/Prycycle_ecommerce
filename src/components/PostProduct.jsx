@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Css/PostProduct.css';
+import '../components/Css/PostProduct.css';
 
 const PostProduct = () => {
   return (

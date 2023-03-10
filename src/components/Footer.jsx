@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faUser, faPlus, faBars, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import '../Css/Footer.css';
+import '../components/Css/Footer.css';
 
 const Footer = () => {
   const [popOpen, setpopOpen] = useState(false);
