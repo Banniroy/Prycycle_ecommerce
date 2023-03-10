@@ -18,7 +18,7 @@ import Missing from './components/Missing';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { ref, getDownloadURL } from 'firebase/storage';
-import storage from './firebase/firebaseStorage';
+import { storage } from './firebase/firebaseStorage';
 
 const App = () => {
 
