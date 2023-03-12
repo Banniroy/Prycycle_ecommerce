@@ -50,7 +50,29 @@ const App = () => {
     else{
       setcartItem([...cartItem, {...product, quatity: 1}])
     }
+  } 
+
+  const handleMinuProduct = (product) => {
+    const productExist = cartItem.find((item) => item.id === product.id);
+    if (productExist.quatity === 1) {
+      setcartItem(cartItem.filter((filterItem) => filterItem.id !== product.id));
+    }
+    else {
+      setcartItem(
+        cartItem.map((mappedItem) =>
+          mappedItem.id === product.id
+            ? { ...productExist, quatity: productExist.quatity - 1 } : mappedItem
+        )
+      )
+    };
+
   }
+
+  const handleCartClearance = () => {
+    setcartItem([]);
+  }
+
+  const totalPrice = cartItem.reduce((price, mappedItem) => price * mappedItem.quatity * item.price, 0);
 
   return (
     <div className='App'>
@@ -76,11 +98,15 @@ const App = () => {
         <Route exact path="/shoppingCart">
           <ShoppingCart 
             cartItem={cartItem}
+            handleAddProduct={handleAddProduct}
+            handleMinuProduct={handleMinuProduct}
+            handleCartClearance={handleCartClearance}
+            totalPrice={totalPrice}
           />
         </Route>
         <Route exact path="/viewProduct/:id">
           <ViewProduct
-
+            
           />
         </Route>
         <Route path="/bicyclePage">
@@ -108,7 +134,9 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Route path="*" component={Missing} />
       </Switch>
-      <Footer />
+      <Footer 
+        cartItem={cartItem}
+      />
     </div>
   )
 }

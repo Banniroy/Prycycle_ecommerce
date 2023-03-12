@@ -1,7 +1,6 @@
 .ViewProduct{
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 7rem;
 }
 
 .ViewProduct .image-container{
@@ -30,6 +29,8 @@
     margin: 1rem auto;
     min-height: 190px;
     border: 1px solid;
+    margin-bottom: 80px;
+    
 }
 
 .ViewProduct .button-container{
@@ -40,6 +41,10 @@
     align-items: center;
     gap: 0.4rem;
     margin: 0 auto;
+    background-color: var(--POPUP-BGCOLOR);
+
+    position: sticky;
+    bottom: 9%;
 }
 
 .ViewProduct .button-container .add-to-cart{

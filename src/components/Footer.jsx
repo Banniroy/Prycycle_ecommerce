@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../components/Css/Footer.css';
 
-const Footer = () => {
+const Footer = ({ cartItem }) => {
   const [popOpen, setpopOpen] = useState(false);
 
   function toggleMenu() {
@@ -60,6 +60,9 @@ const Footer = () => {
       <Link className='link' to="/shoppingCart">
         <section>
           <FontAwesomeIcon className='font' icon={faCartShopping} />
+          <span className="length">
+            {cartItem.length === 0 ? '' : cartItem.length} 
+          </span>
         </section>
       </Link>
       <Link className='link' to="/profile">
