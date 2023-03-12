@@ -1,17 +1,39 @@
-import SkateboardFeeds from './SkateboardFeeds';
+import { Link } from 'react-router-dom';
+import '../Css/AllproductCategories.css';
 
-const Skateboard = ({ skateboardItems }) => {
+const Skateboard = ({ skateboardItems, handleAddProduct }) => {
 
   return (
-    <section className='BicyclePage'>
-      {skateboardItems.length ? (
-        <SkateboardFeeds skateboardItems={skateboardItems} />
-      ) : (
-        <p className='no-post' style={{ marginTop: '3rem' }}>
-          No products to display.
-        </p>
-      )}
-    </section>
+    <article className='post'>
+      {skateboardItems.map((skateboardItem) => (
+
+        <section key={skateboardItem.id}>
+          <Link className='post-con' to={`/viewProduct/${skateboardItem.id}`}>
+            <div className="img-container">
+              <img
+                src={skateboardItem.image}
+                alt={skateboardItem.name}
+              />
+            </div>
+
+
+            <div className="info-container">
+              <h3>{skateboardItem.name}</h3>
+              <p className='price'>${skateboardItem.price}</p>
+
+            </div>
+          </Link>
+
+          <div className='button-container'>
+            <button className='add' onClick={() => handleAddProduct (skateboardItem)}>Add to Cart</button>
+          </div>
+
+        </section>
+
+
+      ))}
+
+    </article>
   )
 }
 

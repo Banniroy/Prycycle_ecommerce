@@ -58,7 +58,7 @@ const Footer = ({ cartItem }) => {
         </section>
       </Link>
       <Link className='link' to="/shoppingCart">
-        <section>
+        <section className='length-show'>
           <FontAwesomeIcon className='font' icon={faCartShopping} />
           <span className="length">
             {cartItem.length === 0 ? '' : cartItem.length} 

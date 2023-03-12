@@ -41,16 +41,16 @@ const App = () => {
     setMenuOpen(!menuOpen);
   }
 
-  const handleAddProduct = (product) =>{
+  const handleAddProduct = (product) => {
     const ProductExist = cartItem.find((item) => item.id === product.id);
-    if (ProductExist){
+    if (ProductExist) {
       setcartItem(cartItem.map((item) => item.id === product.id ?
-      {...ProductExist,quantity: ProductExist.quantity + 1}: item));
+        { ...ProductExist, quantity: ProductExist.quantity + 1 } : item));
     }
-    else{
-      setcartItem([...cartItem, {...product, quantity: 1}])
+    else {
+      setcartItem([...cartItem, { ...product, quantity: 1 }])
     }
-  } 
+  }
 
   const handleMinuProduct = (product) => {
     const productExist = cartItem.find((item) => item.id === product.id);
@@ -96,7 +96,7 @@ const App = () => {
           <PostProduct />
         </Route>
         <Route exact path="/shoppingCart">
-          <ShoppingCart 
+          <ShoppingCart
             cartItem={cartItem}
             handleAddProduct={handleAddProduct}
             handleMinuProduct={handleMinuProduct}
@@ -135,7 +135,7 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Route path="*" component={Missing} />
       </Switch>
-      <Footer 
+      <Footer
         cartItem={cartItem}
       />
     </div>

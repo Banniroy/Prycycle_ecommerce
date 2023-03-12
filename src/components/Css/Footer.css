@@ -93,3 +93,24 @@
 }
 
 /* POPUP MENU */
+
+footer .length-show{
+    position: relative;
+}
+
+footer .length{
+    background-color: var(--RED);
+    color: var(--COLOR);
+    min-width: 20px;
+    min-height: 20px;
+    position: absolute;
+    bottom: 16px;
+    left: 19px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+
+    border-radius: 50%;
+}

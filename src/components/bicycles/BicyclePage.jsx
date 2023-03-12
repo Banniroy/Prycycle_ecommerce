@@ -1,17 +1,45 @@
-import BicyclesFeeds from './BicyclesFeeds';
+import { Link } from 'react-router-dom';
+import '../Css/AllproductCategories.css';
 
 const BicyclePage = ({ bicycleItems, handleAddProduct }) => {
 
     return (
-        <section className='BicyclePage'>
-            {bicycleItems.length ? (
-                <BicyclesFeeds bicycleItems={bicycleItems} handleAddProduct={handleAddProduct}/>
-            ) : (
-                <p className='no-post' style={{ marginTop: '3rem' }}>
-                    No products to display.
-                </p>
-            )}
-        </section>
+        <article className='post'>
+            {bicycleItems.map((bicycleItem) => (
+                
+                <section key={bicycleItem.id}>
+                    <Link className='post-con' to={`/viewProduct/${bicycleItem.id}`}>
+                        <div className="img-container">
+                            <img
+                                src={bicycleItem.image}
+                                alt={bicycleItem.name}
+                            />
+                        </div>
+
+
+                        <div className="info-container">
+                            <h3>{bicycleItem.name}</h3>
+                            <p className='price'>${bicycleItem.price}</p>
+
+                        </div>
+                    </Link>
+
+                    <div className='button-container'>
+                        <button className='add' onClick={() => handleAddProduct (bicycleItem)}>Add to Cart</button>
+                    </div>
+
+                </section>
+
+
+            ))}
+
+
+
+
+
+
+
+        </article>
     )
 }
 
