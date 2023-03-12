@@ -45,10 +45,10 @@ const App = () => {
     const productExist = cartItem.find((item) => item.id === product.id);
     if (productExist){
       setcartItem(cartItem.map((item) => item.id === product.id ?
-      {...productExist,quatitty: productExist.quatitty + 1}: item));
+      {...productExist,quatity: productExist.quatity + 1}: item));
     }
     else{
-      setcartItem([...cartItem, {...product, quatitty: 1}])
+      setcartItem([...cartItem, {...product, quatity: 1}])
     }
   }
 
