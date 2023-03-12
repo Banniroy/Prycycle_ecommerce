@@ -1,11 +1,11 @@
 import BicyclesFeeds from './BicyclesFeeds';
 
-const BicyclePage = ({ Bicycleposts }) => {
+const BicyclePage = ({ bicycleItems, handleAddProduct }) => {
 
     return (
         <section className='BicyclePage'>
-            {Bicycleposts.length ? (
-                <BicyclesFeeds Bicycleposts={Bicycleposts} />
+            {bicycleItems.length ? (
+                <BicyclesFeeds bicycleItems={bicycleItems} handleAddProduct={handleAddProduct}/>
             ) : (
                 <p className='no-post' style={{ marginTop: '3rem' }}>
                     No products to display.

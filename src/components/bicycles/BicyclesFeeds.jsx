@@ -2,14 +2,16 @@ import React from 'react';
 import BicyclePagePost from './BicyclePagePost';
 import '../Css/AllproductCategories.css';
 
-const BicyclesFeeds = ({ Bicycleposts }) => {
+const BicyclesFeeds = ({ bicycleItems, handleAddProduct }) => {
 
     return (
         <>
-            {Bicycleposts.map(postMapped => (
+            {bicycleItems.map(postMapped => (
                 <BicyclePagePost
                     key={postMapped.id}
                     postMapped={postMapped}
+                    handleAddProduct={handleAddProduct}
+                    bicycleItems={bicycleItems}
                 />
             ))}
         </>

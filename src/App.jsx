@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import About from './components/About';
@@ -16,79 +15,22 @@ import Card from './components/Card';
 import ViewProduct from './components/ViewProduct';
 import Services from './components/Services';
 import Missing from './components/Missing';
-import { useState, useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import { ref, getDownloadURL } from 'firebase/storage';
-import { storage } from './firebase/firebaseStorage';
+import { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import data1 from './data/data1';
+import data2 from './data/data2';
 
 const App = () => {
-
-  const [Bicycleposts, setBicyclePosts] = useState([]);
-  const [Skateboardposts, setSkateboardPosts] = useState([]);
   const [Accessoriesposts, setAccessoriesPosts] = useState([]);
 
   const [openSearch, setOpenSearch] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchResult, setSearchResults] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
+
+  const [cartItem, setcartItem] = useState([]);
 
 
-
-  useEffect(() => {
-   const fetchBicyclePosts = async () => {
-    try {
-      const fileRef = ref(storage, "/data/bicycle.json");
-      const url = await getDownloadURL(fileRef);
-
-      const response = await axios.get(url, { baseURL: 'https://storage.googleapis.com/bicycle-website-3a0d9.appspot.com/' });
-      setBicyclePosts(response.data);
-      console.log(setBicyclePosts);
-    } catch (error) {
-      console.log(error);
-    }
-   };
-
-   fetchBicyclePosts();
-  }, []);
-
-
-  useEffect(() => {
-    const fetchAccessoriesPosts = async () => {
-
-      try {
-        const fileRef = ref(storage, "/data/bicycle.json");
-        const url = await getDownloadURL(fileRef);
-
-        const response = await axios.get(url, { baseURL: 'https://storage.googleapis.com/bicycle-website-3a0d9.appspot.com/' });
-        const response = await data.json();
-        setAccessoriesPosts(response)
-        console.log(setAccessoriesPosts)
-      } catch (error) {
-        console.log(error);
-      }
-    }
-
-    fetchAccessoriesPosts()
-  }, [])
-
-  useEffect(() => {
-    const fetchSkateboardsPosts = async () => {
-
-      try {
-        const fileRef = ref(storage, "/data/bicycle.json");
-        const url = await getDownloadURL(fileRef);
-
-        const response = await axios.get(url, { baseURL: 'https://storage.googleapis.com/bicycle-website-3a0d9.appspot.com/' });
-        const response = await data.json();
-        setSkateboardPosts(response)
-        console.log(setSkateboardPosts)
-      } catch (error) {
-        console.log(error);
-      }
-    }
-
-    fetchSkateboardsPosts()
-  }, [])
+  const { bicycleItems } = data1;
+  const { skateboardItems } = data2;
 
 
   function toggleSearch() {
@@ -99,9 +41,16 @@ const App = () => {
     setMenuOpen(!menuOpen);
   }
 
-  const HandleSearchInputChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
+  const handleAddProduct = (product) =>{
+    const productExist = cartItem.find((item) => item.id === product.id);
+    if (productExist){
+      setcartItem(cartItem.map((item) => item.id === product.id ?
+      {...productExist,quatitty: productExist.quatitty + 1}: item));
+    }
+    else{
+      setcartItem([...cartItem, {...product, quatitty: 1}])
+    }
+  }
 
   return (
     <div className='App'>
@@ -111,9 +60,6 @@ const App = () => {
         toggleSearch={toggleSearch}
       />
       <Nav
-        searchQuery={setSearchQuery}
-        setSearch={setSearchResults}
-        openSearch={openSearch}
       />
       <Switch>
         <Route exact path="/">
@@ -128,7 +74,9 @@ const App = () => {
           <PostProduct />
         </Route>
         <Route exact path="/shoppingCart">
-          <ShoppingCart />
+          <ShoppingCart 
+            cartItem={cartItem}
+          />
         </Route>
         <Route exact path="/viewProduct/:id">
           <ViewProduct
@@ -137,17 +85,20 @@ const App = () => {
         </Route>
         <Route path="/bicyclePage">
           <BicyclePage
-            Bicycleposts={Bicycleposts}
+            bicycleItems={bicycleItems}
+            handleAddProduct={handleAddProduct}
           />
         </Route>
         <Route path="/skateboard">
           <Skateboard
-            Skateboardposts={Skateboardposts}
+            skateboardItems={skateboardItems}
+            handleAddProduct={handleAddProduct}
           />
         </Route>
         <Route exact path="/accessories">
           <Accessories
             Accessoriesposts={Accessoriesposts}
+            handleAddProduct={handleAddProduct}
 
           />
         </Route>

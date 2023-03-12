@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import '../components/Css/ShoppingCart.css';
 
-const ShoppingCart = () => {
+const ShoppingCart = ({ cartItem }) => {
   const [cartItems, setCartItems] = useState([]);
 
   const totalPrice = cartItems.reduce((price, mappedItem) => price * mappedItem.quatity * item.price, 0);
+
   const handleMinuProduct = (product) => {
     const productExist = cartItems.find((item) => item.id === product.id);
     if (productExist.quatity === 1) {
@@ -19,7 +20,7 @@ const ShoppingCart = () => {
       )
     };
 
-    const handleCartClearance = () =>{
+    const handleCartClearance = () => {
       setCartItems([]);
     }
 
@@ -57,8 +58,8 @@ const ShoppingCart = () => {
       </div>
 
       <section className='cart-item-total-price-name'>
-          Total price 
-          <div className='cart-item-total-price'>${totalPrice}</div>
+        Total price
+        <div className='cart-item-total-price'>${totalPrice}</div>
       </section>
     </section>
   )

@@ -2,11 +2,11 @@ import React from 'react';
 import SkateboardPagePost from './SkateboardPagePost';
 import '../Css/AllproductCategories.css';
 
-const SkateboardFeeds = ({ Skateboardposts }) => {
+const SkateboardFeeds = ({ skateboardItems }) => {
 
     return (
         <>
-            {Skateboardposts.map(postMapped => (
+            {skateboardItems.map(postMapped => (
                 <SkateboardPagePost
                     key={postMapped.id}
                     postMapped={postMapped}

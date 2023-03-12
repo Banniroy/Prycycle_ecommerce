@@ -7,7 +7,7 @@ const SkateboardPagePost = ({ postMapped }) => {
   return (
     <article className='post'>
       <Link className='post-con' to={`/viewProduct/${postMapped.id}`}>
-        <div className="img-container">{ }</div>
+        <div className="img-container">{postMapped.image}</div>
         <div className="info-container">
           <h3>{postMapped.name}</h3>
           <p className='price'>${postMapped.price}</p>

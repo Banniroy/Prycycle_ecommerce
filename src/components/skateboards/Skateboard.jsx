@@ -1,11 +1,11 @@
 import SkateboardFeeds from './SkateboardFeeds';
 
-const Skateboard = ({ Skateboardposts }) => {
+const Skateboard = ({ skateboardItems }) => {
 
   return (
     <section className='BicyclePage'>
-      {Skateboardposts.length ? (
-        <SkateboardFeeds Skateboardposts={Skateboardposts} />
+      {skateboardItems.length ? (
+        <SkateboardFeeds skateboardItems={skateboardItems} />
       ) : (
         <p className='no-post' style={{ marginTop: '3rem' }}>
           No products to display.
