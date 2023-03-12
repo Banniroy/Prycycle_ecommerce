@@ -72,7 +72,7 @@ const App = () => {
     setcartItem([]);
   }
 
-  const totalPrice = cartItem.reduce((price, mappedItem) => price * mappedItem.quatity * item.price, 0);
+  const totalPrice = cartItem.reduce((price, mappedItem) => price * mappedItem.quatity * mappedItem.price, 0);
 
   return (
     <div className='App'>
