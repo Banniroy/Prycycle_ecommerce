@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../components/Css/ShoppingCart.css';
 
-const ShoppingCart = ({ cartItem, handleMinuProduct, handleCartClearance, totalPrice }) => {
+const ShoppingCart = ({ cartItem, handleMinuProduct, handleCartClearance, totalPrice, handleAddProduct }) => {
 
   return (
     <section className="cart-items">

@@ -42,13 +42,13 @@ const App = () => {
   }
 
   const handleAddProduct = (product) =>{
-    const productExist = cartItem.find((item) => item.id === product.id);
-    if (productExist){
+    const ProductExist = cartItem.find((item) => item.id === product.id);
+    if (ProductExist){
       setcartItem(cartItem.map((item) => item.id === product.id ?
-      {...productExist,quatity: productExist.quatity + 1}: item));
+      {...ProductExist,quantity: ProductExist.quantity + 1}: item));
     }
     else{
-      setcartItem([...cartItem, {...product, quatity: 1}])
+      setcartItem([...cartItem, {...product, quantity: 1}])
     }
   } 
 
