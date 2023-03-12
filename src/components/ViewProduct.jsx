@@ -3,7 +3,7 @@ import '../components/Css/viewProduct.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 
-const ViewProduct = () => {
+const ViewProduct = ( { handleAddProduct, bicycleItems  }) => {
   return (
     <section className='ViewProduct'>
         <div className="image-container">{}</div>
@@ -11,7 +11,7 @@ const ViewProduct = () => {
         <div className="price"></div>
         <div className="information">{}</div>
         <div className="button-container">
-          <button className="add-to-cart"><FontAwesomeIcon className='login_icon' icon={faBasketShopping} />Add to cart</button>
+          <button className="add-to-cart" onClick={() => handleAddProduct(bicycleItems)}><FontAwesomeIcon className='login_icon' icon={faBasketShopping} />Add to cart</button>
           <button className="order">Buy Now</button>
         </div>
     </section>

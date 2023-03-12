@@ -106,7 +106,8 @@ const App = () => {
         </Route>
         <Route exact path="/viewProduct/:id">
           <ViewProduct
-            
+            bicycleItems={bicycleItems}
+            handleAddProduct={handleAddProduct}
           />
         </Route>
         <Route path="/bicyclePage">
